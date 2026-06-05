@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /brand-book.html
+Disallow: /brand-book-print.html
+
+Sitemap: https://www.allmodelrepair.com/sitemap.xml

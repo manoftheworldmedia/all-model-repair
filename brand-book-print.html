@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>All Model Repair — Brand Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Saira:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --orange:#F2922E; --orange-vivid:#FE9222; --amber:#FAA03D;
+  --charcoal:#27292A; --carbon:#0C0D10; --slate:#15181E;
+  --cloud:#F4F5F7; --white:#FFFFFF;
+  --fd:"Saira",sans-serif; --fb:"Barlow",system-ui,sans-serif;
+  --max:1120px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--carbon);color:#111;font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,5vw,56px);}
+
+/* ---------- THEME TOKENS (per section) ---------- */
+.theme-white{
+  --bg:#FFFFFF; --head:#101114; --text:#2A2E35; --soft:#454B54; --muted:#717784;
+  --panel:#F4F5F7; --panel2:#ECEEF1; --border:rgba(16,18,22,.12); --border2:rgba(16,18,22,.20);
+  --accent:var(--orange);
+}
+.theme-light{
+  --bg:#EEF0F3; --head:#101114; --text:#2A2E35; --soft:#454B54; --muted:#6E747F;
+  --panel:#FFFFFF; --panel2:#F4F5F7; --border:rgba(16,18,22,.12); --border2:rgba(16,18,22,.20);
+  --accent:var(--orange);
+}
+.theme-cream{
+  --bg:#FBF4EA; --head:#1A130B; --text:#3A3326; --soft:#574d3c; --muted:#8a7c63;
+  --panel:#FFFFFF; --panel2:#F5ECDD; --border:rgba(60,40,15,.14); --border2:rgba(60,40,15,.24);
+  --accent:#D77A18;
+}
+.theme-dark{
+  --bg:#0E1014; --head:#FFFFFF; --text:#E7E9ED; --soft:#C2C7D0; --muted:#868D99;
+  --panel:#16191F; --panel2:#1C2027; --border:rgba(255,255,255,.10); --border2:rgba(255,255,255,.17);
+  --accent:var(--orange);
+}
+.theme-charcoal{
+  --bg:#1A1C20; --head:#FFFFFF; --text:#E7E9ED; --soft:#C2C7D0; --muted:#8A909B;
+  --panel:#23262C; --panel2:#2A2E35; --border:rgba(255,255,255,.10); --border2:rgba(255,255,255,.17);
+  --accent:var(--orange);
+}
+.theme-orange{
+  --bg:#F2922E; --head:#1A130B; --text:#241A0E; --soft:#3a2c19; --muted:#6e5026;
+  --panel:rgba(255,255,255,.18); --panel2:rgba(255,255,255,.28); --border:rgba(26,19,11,.22); --border2:rgba(26,19,11,.34);
+  --accent:#1A130B;
+}
+
+section,header.cover{background:var(--bg);color:var(--text);}
+
+/* ---------- shared type ---------- */
+.eyebrow{font-family:var(--fd);text-transform:uppercase;letter-spacing:.24em;font-weight:600;font-size:13px;color:var(--accent);display:inline-flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);}
+.display{font-family:var(--fd);font-weight:700;text-transform:uppercase;line-height:.98;letter-spacing:.01em;margin:0;}
+
+/* ---------- cover ---------- */
+.cover{position:relative;overflow:hidden;border-bottom:1px solid var(--border);}
+.cover-glow{position:absolute;inset:0;z-index:0;background:
+  radial-gradient(60% 90% at 88% 0,rgba(242,146,46,.20),transparent 60%),
+  radial-gradient(50% 70% at 0 100%,rgba(242,146,46,.08),transparent 60%);}
+.cover-grid{position:absolute;inset:0;z-index:0;opacity:.6;
+  background-image:linear-gradient(rgba(16,18,22,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(16,18,22,.045) 1px,transparent 1px);
+  background-size:48px 48px;mask-image:radial-gradient(120% 100% at 50% 0,#000,transparent 78%);}
+.cover .wrap{position:relative;z-index:1;padding-block:clamp(46px,7vw,76px);}
+.cover img.logo{width:min(540px,82vw);margin-bottom:30px;}
+.cover .eyebrow{margin-bottom:18px;}
+.cover h1{font-size:clamp(42px,7.4vw,92px);color:var(--head);}
+.cover h1 .o{color:var(--orange);}
+.cover .sub{margin-top:18px;color:var(--soft);font-size:clamp(17px,1.6vw,21px);max-width:560px;}
+.cover .meta{margin-top:32px;display:flex;gap:30px;flex-wrap:wrap;font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--muted);}
+.cover .meta b{color:var(--head);font-weight:600;}
+
+/* ---------- section scaffold ---------- */
+section{padding-block:clamp(56px,8vw,100px);position:relative;}
+.sec-head{margin-bottom:46px;max-width:720px;}
+.sec-head .num{font-family:var(--fd);font-weight:700;font-size:14px;letter-spacing:.2em;color:var(--accent);}
+.sec-head h2{font-family:var(--fd);font-weight:700;text-transform:uppercase;line-height:1;font-size:clamp(30px,4.4vw,52px);color:var(--head);margin:14px 0 0;}
+.sec-head p{margin:16px 0 0;color:var(--soft);}
+
+/* ---------- logo panels ---------- */
+.logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:760px){.logo-grid{grid-template-columns:1fr;}}
+.panel{border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;}
+.panel .plabel{position:absolute;top:14px;left:16px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;font-size:11px;z-index:2;}
+.panel-pad{display:grid;place-items:center;min-height:280px;padding:48px;}
+.panel.on-light{background:var(--white);} .panel.on-light .plabel{color:#7a808b;}
+.panel.on-cloud{background:var(--cloud);} .panel.on-cloud .plabel{color:#7a808b;}
+.panel.on-dark{background:var(--carbon);} .panel.on-dark .plabel{color:#7a808b;}
+.panel.on-orange{background:var(--orange);} .panel.on-orange .plabel{color:rgba(0,0,0,.45);}
+.panel img.full{width:min(360px,80%);}
+.panel img.ico{width:min(150px,42%);}
+.lockup{display:flex;align-items:center;gap:16px;}
+.lockup img{height:64px;width:auto;}
+.lockup .wm{display:flex;flex-direction:column;gap:5px;line-height:1;}
+.lockup .wm .n{font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:27px;letter-spacing:.04em;color:#fff;}
+.lockup .wm .s{font-family:var(--fd);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#9aa0ac;}
+
+.util-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-top:20px;}
+@media(max-width:760px){.util-grid{grid-template-columns:1fr;}}
+.clearspace{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:40px;display:grid;place-items:center;}
+.clearspace .plabel{position:absolute;top:14px;left:16px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted);}
+.clearspace .box{position:relative;padding:34px;}
+.clearspace .box::before{content:"";position:absolute;inset:0;border:1px dashed var(--orange);opacity:.7;border-radius:4px;}
+.clearspace img{height:74px;}
+.minsize{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:34px;display:flex;flex-direction:column;gap:24px;justify-content:center;}
+.minsize .row{display:flex;align-items:center;gap:18px;}
+.minsize .row img{height:38px;} .minsize .row .big{height:60px;}
+.minsize .row span{font-family:var(--fd);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--muted);}
+
+/* ---------- misuse ---------- */
+.dont-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+@media(max-width:760px){.dont-grid{grid-template-columns:repeat(2,1fr);}}
+.dont{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;}
+.dont .frame{height:96px;display:grid;place-items:center;margin-bottom:16px;overflow:hidden;}
+.dont .frame img{height:62px;}
+.dont .x{display:inline-flex;align-items:center;gap:7px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:#e0564a;font-weight:600;}
+.dont .x::before{content:"✕";font-size:13px;}
+.dont p{margin:6px 0 0;font-size:13px;color:var(--muted);}
+.d-stretch img{transform:scaleX(1.7);}
+.d-rotate img{transform:rotate(-12deg);}
+.d-recolor{filter:hue-rotate(160deg) saturate(1.4);}
+.d-busy .frame{background:conic-gradient(from 0deg,#444,#777,#444,#777,#444);border-radius:6px;}
+
+/* ---------- color ---------- */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+@media(max-width:900px){.swatches{grid-template-columns:repeat(2,1fr);}}
+.sw{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--panel);}
+.sw .chip{height:120px;display:flex;align-items:flex-end;padding:14px;}
+.sw .chip .hex{font-family:var(--fd);font-weight:600;letter-spacing:.06em;font-size:14px;background:rgba(0,0,0,.30);color:#fff;padding:5px 9px;border-radius:5px;}
+.sw .chip.ink .hex{background:rgba(255,255,255,.9);color:#111;}
+.sw .meta{padding:14px 16px 18px;}
+.sw .meta .nm{font-family:var(--fd);text-transform:uppercase;font-size:15px;letter-spacing:.04em;color:var(--head);}
+.sw .meta .use{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.45;}
+
+/* ---------- type ---------- */
+.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:760px){.type-grid{grid-template-columns:1fr;}}
+.type-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:32px;}
+.type-card .role{font-family:var(--fd);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--accent);}
+.type-card .fam{font-family:var(--fd);font-weight:800;font-size:clamp(40px,6vw,72px);color:var(--head);margin:10px 0 2px;text-transform:uppercase;letter-spacing:.01em;}
+.type-card .fam.body{font-family:var(--fb);font-weight:700;text-transform:none;letter-spacing:0;}
+.type-card .weights{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:13px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.1em;}
+.type-card .glyphs{font-size:22px;color:var(--soft);letter-spacing:.02em;border-top:1px solid var(--border);margin-top:18px;padding-top:18px;}
+.type-card .glyphs.body{font-family:var(--fb);}
+.scale{margin-top:24px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:8px 32px;}
+.scale .line{display:flex;align-items:baseline;gap:18px;padding:16px 0;border-bottom:1px solid var(--border);}
+.scale .line:last-child{border-bottom:0;}
+.scale .line .tag{font-family:var(--fb);font-size:12px;color:var(--muted);width:120px;flex:none;text-transform:uppercase;letter-spacing:.1em;}
+.scale .h1{font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:44px;color:var(--head);line-height:1;}
+.scale .h2{font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:30px;color:var(--head);line-height:1;}
+.scale .lb{font-family:var(--fd);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:14px;color:var(--accent);}
+.scale .bd{font-family:var(--fb);font-size:17px;color:var(--soft);}
+
+/* ---------- mockups ---------- */
+.mock-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:860px){.mock-grid{grid-template-columns:1fr;}}
+.mock{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--panel);}
+.mock .cap{padding:14px 18px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--muted);border-top:1px solid var(--border);}
+.mock .stage{padding:34px;display:grid;place-items:center;min-height:264px;}
+.cards{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;}
+.card{width:300px;height:178px;border-radius:12px;box-shadow:0 24px 50px -20px rgba(0,0,0,.55);overflow:hidden;position:relative;}
+.card.front{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:20px;}
+.card.front img{height:54px;}
+.card.front .info{font-family:var(--fb);font-size:11px;color:#444;line-height:1.5;}
+.card.front .info b{font-family:var(--fd);text-transform:uppercase;letter-spacing:.08em;color:var(--charcoal);font-size:12px;display:block;margin-bottom:3px;}
+.card.front .bar{position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--orange);}
+.card.back{background:var(--charcoal);display:grid;place-items:center;}
+.card.back .lk{display:flex;align-items:center;gap:12px;}
+.card.back .lk img{height:46px;}
+.card.back .lk .n{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:18px;letter-spacing:.04em;line-height:1;}
+.card.back .lk .s{font-family:var(--fd);font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-top:4px;}
+.sign{width:100%;max-width:440px;background:linear-gradient(180deg,#101216,#1b1f27);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:34px;display:flex;align-items:center;gap:18px;box-shadow:0 0 0 6px rgba(0,0,0,.18),0 30px 60px -20px rgba(242,146,46,.3);}
+.sign img{height:72px;}
+.sign .wm .n{font-family:var(--fd);font-weight:800;text-transform:uppercase;color:#fff;font-size:26px;letter-spacing:.03em;line-height:1;}
+.sign .wm .s{font-family:var(--fd);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-top:6px;}
+.merch{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;}
+.sticker{width:150px;height:150px;border-radius:50%;background:var(--charcoal);display:grid;place-items:center;border:5px solid var(--orange);box-shadow:0 16px 36px -12px rgba(0,0,0,.5);}
+.sticker img{width:74%;}
+.tee{width:190px;height:170px;background:#202329;border:1px solid rgba(255,255,255,.12);border-radius:14px;display:grid;place-items:center;position:relative;}
+.tee::before,.tee::after{content:"";position:absolute;top:18px;width:42px;height:42px;background:#202329;border:1px solid rgba(255,255,255,.12);border-radius:8px;}
+.tee::before{left:-14px;transform:rotate(34deg);}
+.tee::after{right:-14px;transform:rotate(-34deg);}
+.tee img{width:62%;position:relative;z-index:1;filter:brightness(0) invert(1);opacity:.92;}
+.webmock{width:100%;background:var(--carbon);border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;}
+.webmock .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
+.webmock .bar .lk{display:flex;align-items:center;gap:11px;}
+.webmock .bar .lk img{height:30px;}
+.webmock .bar .lk .n{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:15px;letter-spacing:.04em;}
+.webmock .bar .btn{font-family:var(--fd);text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:600;background:var(--orange);color:var(--charcoal);padding:9px 16px;border-radius:6px;}
+.webmock .body{padding:26px 20px;}
+.webmock .body .eb{font-family:var(--fd);text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:var(--orange);}
+.webmock .body .hl{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:26px;line-height:1;margin-top:8px;}
+
+/* ---------- voice ---------- */
+.voice{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media(max-width:760px){.voice{grid-template-columns:1fr;}}
+.voice .v{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--head);border-radius:10px;padding:24px;}
+.voice .v h4{font-family:var(--fd);text-transform:uppercase;letter-spacing:.04em;font-size:18px;margin:0 0 8px;color:var(--head);}
+.voice .v p{margin:0;font-size:14px;color:var(--soft);}
+.tagline{margin-top:30px;font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:clamp(24px,3.6vw,42px);color:var(--head);line-height:1.05;}
+.tagline .o{color:#fff;-webkit-text-stroke:1px var(--head);}
+
+/* ---------- footer ---------- */
+footer.bb{padding-block:46px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--border);background:var(--bg);}
+.backlink{display:inline-flex;align-items:center;gap:8px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--soft);text-decoration:none;margin-bottom:26px;}
+.backlink:hover{color:var(--orange);}
+footer.bb .fl{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:18px;}
+footer.bb .fl img{height:40px;}
+
+/* ---------- PRINT ---------- */
+@media print{
+  @page{ size:Letter portrait; margin:0; }
+  html,body{ background:#fff; }
+  *,*::before,*::after{
+    -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important;
+    animation-duration:.001s !important; animation-delay:-99s !important;
+    transition-duration:0s !important;
+  }
+  .cover, section, footer.bb{ break-before:page; break-inside:avoid; }
+  .cover{ break-before:avoid; }
+  .cover .wrap, section .wrap, footer.bb .wrap{ padding-block:46px; }
+  .cover{ min-height:auto; }
+  /* keep component blocks from splitting awkwardly */
+  .panel,.sw,.type-card,.scale,.mock,.dont,.voice .v,.card,.sign,.minsize,.clearspace{ break-inside:avoid; }
+  .logo-grid,.swatches,.dont-grid,.type-grid,.mock-grid,.voice,.util-grid{ break-inside:avoid; }
+  .cover-grid{ display:none; }
+  a[href]{ text-decoration:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- COVER (white) -->
+<header class="cover theme-white">
+  <div class="cover-glow"></div>
+  <div class="cover-grid"></div>
+  <div class="wrap">
+    <img class="logo" src="assets/logo-full.png" alt="All Model Repair logo" />
+    <span class="eyebrow">Brand Guidelines</span>
+    <h1 class="display">All Model <span class="o">Repair</span></h1>
+    <p class="sub">A mini brand book for the marks, colors, and type that make All Model Repair recognizable — foreign and domestic, in Glendale.</p>
+    <div class="meta">
+      <span><b>Version</b> 1.0</span>
+      <span><b>Glendale,</b> CA</span>
+      <span><b>Auto Repair</b> &amp; Detailing</span>
+    </div>
+  </div>
+</header>
+
+<!-- 01 LOGO (light gray) -->
+<section id="logo" class="theme-light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">01 — Logo</div>
+      <h2>The Mark</h2>
+      <p>A sleek sports-car silhouette with an orange speed arc, locked to the wordmark. The body is knocked out, so the mark takes on its surface — white on light, near-black on dark.</p>
+    </div>
+    <div class="logo-grid">
+      <div class="panel on-light">
+        <span class="plabel">Primary · Light Background</span>
+        <div class="panel-pad"><img class="full" src="assets/logo-full.png" alt="All Model Repair primary logo" /></div>
+      </div>
+      <div class="panel on-dark">
+        <span class="plabel">Reversed · Dark Background</span>
+        <div class="panel-pad">
+          <div class="lockup">
+            <img src="assets/logo-icon.png" alt="" />
+            <span class="wm"><span class="n">All Model Repair</span><span class="s">Foreign &amp; Domestic</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="panel on-dark">
+        <span class="plabel">Icon Mark · Dark</span>
+        <div class="panel-pad"><img class="ico" src="assets/logo-icon.png" alt="icon on dark" /></div>
+      </div>
+      <div class="panel on-light">
+        <span class="plabel">Icon Mark · Light</span>
+        <div class="panel-pad"><img class="ico" src="assets/logo-icon.png" alt="icon on light" /></div>
+      </div>
+    </div>
+    <div class="util-grid">
+      <div class="clearspace">
+        <span class="plabel">Clear Space</span>
+        <div class="box"><img src="assets/logo-icon.png" alt="clear space" /></div>
+      </div>
+      <div class="minsize">
+        <div class="row"><img class="big" src="assets/logo-icon.png" alt="" /><span>Digital · 32px min height (icon)</span></div>
+        <div class="row"><img src="assets/logo-icon.png" alt="" /><span>Print · 0.4 in min height</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 MISUSE (dark) -->
+<section id="misuse" class="theme-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">02 — Misuse</div>
+      <h2>Don't Do This</h2>
+      <p>Keep the mark honest. Protect proportions, color, and orientation so it stays instantly recognizable.</p>
+    </div>
+    <div class="dont-grid">
+      <div class="dont d-stretch"><div class="frame"><img src="assets/logo-icon.png" alt="" /></div><span class="x">Stretch</span><p>Never distort proportions.</p></div>
+      <div class="dont d-recolor"><div class="frame"><img src="assets/logo-icon.png" alt="" /></div><span class="x">Recolor</span><p>Don't swap the brand orange.</p></div>
+      <div class="dont d-rotate"><div class="frame"><img src="assets/logo-icon.png" alt="" /></div><span class="x">Rotate</span><p>Keep it level on the road.</p></div>
+      <div class="dont d-busy"><div class="frame"><img src="assets/logo-icon.png" alt="" /></div><span class="x">Busy BG</span><p>Use clean, high-contrast fields.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 COLOR (white) -->
+<section id="color" class="theme-white">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">03 — Color</div>
+      <h2>Palette</h2>
+      <p>One confident orange, a charcoal anchor, and a near-black system. Orange leads; charcoal grounds; neutrals carry the content.</p>
+    </div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#F2922E"><span class="hex">#F2922E</span></div><div class="meta"><div class="nm">AMR Orange</div><div class="use">Primary brand color. Buttons, accents, highlights, the speed arc.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FE9222"><span class="hex">#FE9222</span></div><div class="meta"><div class="nm">Vivid Orange</div><div class="use">The logo's core hue. Energy moments, gradients — use sparingly.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FAA03D"><span class="hex">#FAA03D</span></div><div class="meta"><div class="nm">Amber Glow</div><div class="use">Light tint for hovers and subtle orange washes.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#27292A"><span class="hex">#27292A</span></div><div class="meta"><div class="nm">Charcoal</div><div class="use">Primary ink &amp; wordmark. Text on orange and on light.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#0C0D10"><span class="hex">#0C0D10</span></div><div class="meta"><div class="nm">Carbon</div><div class="use">Primary dark UI background.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#15181E"><span class="hex">#15181E</span></div><div class="meta"><div class="nm">Slate</div><div class="use">Cards and raised dark surfaces.</div></div></div>
+      <div class="sw"><div class="chip ink" style="background:#F4F5F7"><span class="hex">#F4F5F7</span></div><div class="meta"><div class="nm">Cloud</div><div class="use">Light-mode background &amp; logo fields.</div></div></div>
+      <div class="sw"><div class="chip ink" style="background:#FFFFFF;border-bottom:1px solid var(--border)"><span class="hex">#FFFFFF</span></div><div class="meta"><div class="nm">White</div><div class="use">Car body knockout &amp; reversed type.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 TYPOGRAPHY (cream) -->
+<section id="type" class="theme-cream">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">04 — Typography</div>
+      <h2>Type System</h2>
+      <p>Saira is the voice of the brand — engineered, sturdy, automotive — and matches the logo wordmark. Barlow is its calm, readable secondary for body copy.</p>
+    </div>
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="role">Primary · Display</div>
+        <div class="fam">Saira</div>
+        <div class="weights"><span>Semibold 600</span><span>Bold 700</span><span>Black 800</span></div>
+        <div class="glyphs">AaBbCcDd 0123456789 &amp; ! ?<br />ALL MODEL REPAIR</div>
+      </div>
+      <div class="type-card">
+        <div class="role">Secondary · Text</div>
+        <div class="fam body">Barlow</div>
+        <div class="weights"><span>Regular 400</span><span>Medium 500</span><span>Semibold 600</span></div>
+        <div class="glyphs body">The quick brown fox jumps over the lazy dog. Honest auto repair for every make &amp; model.</div>
+      </div>
+    </div>
+    <div class="scale">
+      <div class="line"><span class="tag">H1 · Saira 700</span><span class="h1">Every Make</span></div>
+      <div class="line"><span class="tag">H2 · Saira 700</span><span class="h2">Drive Out Like New</span></div>
+      <div class="line"><span class="tag">Label · Saira 600</span><span class="lb">Family-Owned in Glendale</span></div>
+      <div class="line"><span class="tag">Body · Barlow 400</span><span class="bd">Straight answers, fair prices, work done right the first time.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 MOCKUPS (dark) -->
+<section id="mockups" class="theme-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">05 — In the Wild</div>
+      <h2>Mockups</h2>
+      <p>How the brand shows up across the shop — print, signage, merch, and screen.</p>
+    </div>
+    <div class="mock-grid">
+      <div class="mock">
+        <div class="stage">
+          <div class="cards">
+            <div class="card front">
+              <img src="assets/logo-full.png" alt="" />
+              <div class="info"><b>Mike &amp; John</b>1305 S Glendale Ave, Ste 1 · Glendale, CA 91205<br />(818) 548-8242 · @allmodelrepair</div>
+              <div class="bar"></div>
+            </div>
+            <div class="card back">
+              <div class="lk">
+                <img src="assets/logo-icon.png" alt="" />
+                <div><div class="n">All Model Repair</div><div class="s">Foreign &amp; Domestic</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cap">Business Cards · Front &amp; Back</div>
+      </div>
+      <div class="mock">
+        <div class="stage">
+          <div class="sign">
+            <img src="assets/logo-icon.png" alt="" />
+            <div class="wm"><div class="n">All Model Repair</div><div class="s">Foreign &amp; Domestic</div></div>
+          </div>
+        </div>
+        <div class="cap">Illuminated Shop Sign</div>
+      </div>
+      <div class="mock">
+        <div class="stage">
+          <div class="merch">
+            <div class="sticker"><img src="assets/logo-icon.png" alt="" /></div>
+            <div class="tee"><img src="assets/logo-icon.png" alt="" /></div>
+          </div>
+        </div>
+        <div class="cap">Sticker &amp; Crew Shirt</div>
+      </div>
+      <div class="mock">
+        <div class="stage" style="padding:22px;">
+          <div class="webmock">
+            <div class="bar">
+              <div class="lk"><img src="assets/logo-icon.png" alt="" /><span class="n">All Model Repair</span></div>
+              <span class="btn">Call</span>
+            </div>
+            <div class="body">
+              <div class="eb">Family-Owned in Glendale</div>
+              <div class="hl">Honest Auto Repair<br />For Every Model.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cap">Website Header</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 VOICE (orange) -->
+<section id="voice" class="theme-orange">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">06 — Voice</div>
+      <h2>How We Sound</h2>
+      <p>Like the most honest mechanic you've ever met — because that's the reputation we've earned.</p>
+    </div>
+    <div class="voice">
+      <div class="v"><h4>Straight</h4><p>Plain language, no jargon, no upsell. We tell you what it needs and what it costs.</p></div>
+      <div class="v"><h4>Neighborly</h4><p>Warm and local. We know you by name and we remember your car.</p></div>
+      <div class="v"><h4>Confident</h4><p>Decades of every make and model. We've seen it, and we can fix it.</p></div>
+    </div>
+    <div class="tagline">Honest auto repair for every make &amp; every model.</div>
+  </div>
+</section>
+
+<footer class="bb theme-charcoal">
+  <div class="wrap">
+    <a class="backlink" href="index.html">← Back to the website</a>
+    <div class="fl"><img src="assets/logo-icon.png" alt="All Model Repair" /></div>
+    <p>All Model Repair · 1305 S Glendale Ave, Ste 1, Glendale, CA 91205 · (818) 548-8242<br />Brand Book v1.0 — © <span id="yr"></span> All Model Repair.</p>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  function go(){ setTimeout(function(){ window.print(); }, 600); }
+  if (document.fonts && document.fonts.ready) {
+    Promise.race([document.fonts.ready, new Promise(function(r){setTimeout(r,2500);})]).then(function(){
+      if (document.readyState === 'complete') go();
+      else window.addEventListener('load', go);
+    });
+  } else {
+    window.addEventListener('load', go);
+  }
+})();
+</script>
+</body>
+</html>
