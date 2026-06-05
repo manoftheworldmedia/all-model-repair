@@ -150,7 +150,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.01em;
   margin: 0;
 }
-h1.display { font-size: clamp(40px, 6.6vw, 88px); }
+h1.display { font-size: clamp(28px, 3.9vw, 52px); }
 h2.display { font-size: clamp(32px, 4.6vw, 56px); }
 h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 
@@ -339,20 +339,23 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  min-height: calc(100svh - 118px);
+  display: flex;
+  align-items: center;
 }
 .hero-deco {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background:
     radial-gradient(48% 70% at 95% 6%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 62%);
 }
-.hero-inner { padding-block: clamp(48px, 8vh, 104px); position: relative; z-index: 1; }
-.hero-split { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(28px, 4vw, 60px); align-items: center; }
-@media (max-width: 900px) { .hero-split { grid-template-columns: 1fr; } .hero-visual { display: none; } }
+.hero-inner { width: 100%; padding-block: clamp(20px, 3vh, 40px); position: relative; z-index: 1; }
+.hero-split { display: grid; grid-template-columns: 1.32fr .68fr; gap: clamp(24px, 3vw, 48px); align-items: center; }
+@media (max-width: 900px) { .hero-split { grid-template-columns: 1fr; } .hero-visual { display: none; } .hero { min-height: 0; } }
 .hero-content { max-width: 660px; }
-.hero h1 { margin-top: 18px; color: #14171c; }
+.hero h1 { margin-top: 14px; color: #14171c; }
 .hero h1 .accent { color: var(--accent); }
-.hero .lead { margin: 22px 0 0; max-width: 560px; color: #3c424c; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.hero .lead { margin: 16px 0 0; max-width: 560px; color: #3c424c; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
 
 .hero-visual { position: relative; display: grid; place-items: center; }
 .hero-glow { position: absolute; width: 96%; aspect-ratio: 1; border-radius: 50%;
@@ -360,22 +363,22 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
     color-mix(in srgb, var(--accent) 24%, #fff) 0%,
     color-mix(in srgb, var(--accent) 12%, #fff) 52%,
     transparent 72%); }
-.hero-visual img { position: relative; width: 100%; max-width: 500px; }
+.hero-visual img { position: relative; width: 100%; max-width: 420px; }
 
 /* trust strip */
 .trust {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px 44px;
-  margin-top: 46px;
-  padding-top: 28px;
+  gap: 22px 40px;
+  margin-top: 28px;
+  padding-top: 22px;
   border-top: 1px solid rgba(16,18,22,.12);
   max-width: 640px;
 }
 .trust-item .t-num {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 34px;
+  font-size: 30px;
   color: #14171c;
   line-height: 1;
   display: flex;
@@ -444,6 +447,24 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   margin: 0 0 8px;
 }
 .svc p { margin: 0; font-size: 16px; color: var(--muted); line-height: 1.55; }
+
+/* White service tiles so they pop on the dark services beat */
+#services .svc {
+  background: #ffffff;
+  border-color: rgba(16,18,22,.10);
+  box-shadow: 0 1px 2px rgba(0,0,0,.18), 0 20px 40px -28px rgba(0,0,0,.65);
+}
+#services .svc:hover {
+  background: #ffffff;
+  border-color: rgba(16,18,22,.18);
+  box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 28px 50px -26px rgba(0,0,0,.7);
+}
+#services .svc h3 { color: #14171c; }
+#services .svc p { color: #5b626c; }
+#services .svc-icon {
+  background: color-mix(in srgb, var(--accent) 16%, #ffffff);
+  color: var(--accent);
+}
 
 /* ---------- Why / features split ---------- */
 .split {

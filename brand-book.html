@@ -18,7 +18,7 @@
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{margin:0;background:var(--carbon);color:#111;font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+body{margin:0;background:var(--white);color:#111;font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
 img{max-width:100%;display:block;}
 .wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,5vw,56px);}
 
@@ -93,7 +93,7 @@ section{padding-block:clamp(56px,8vw,100px);position:relative;}
 .panel-pad{display:grid;place-items:center;min-height:280px;padding:48px;}
 .panel.on-light{background:var(--white);} .panel.on-light .plabel{color:#7a808b;}
 .panel.on-cloud{background:var(--cloud);} .panel.on-cloud .plabel{color:#7a808b;}
-.panel.on-dark{background:var(--carbon);} .panel.on-dark .plabel{color:#7a808b;}
+.panel.on-dark{background:var(--charcoal);} .panel.on-dark .plabel{color:#9aa0ab;}
 .panel.on-orange{background:var(--orange);} .panel.on-orange .plabel{color:rgba(0,0,0,.45);}
 .panel img.full{width:min(360px,80%);}
 .panel img.ico{width:min(150px,42%);}
@@ -160,44 +160,21 @@ section{padding-block:clamp(56px,8vw,100px);position:relative;}
 .scale .bd{font-family:var(--fb);font-size:17px;color:var(--soft);}
 
 /* ---------- mockups ---------- */
-.mock-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-@media(max-width:860px){.mock-grid{grid-template-columns:1fr;}}
-.mock{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--panel);}
-.mock .cap{padding:14px 18px;font-family:var(--fd);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--muted);border-top:1px solid var(--border);}
-.mock .stage{padding:34px;display:grid;place-items:center;min-height:264px;}
-.cards{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;}
-.card{width:300px;height:178px;border-radius:12px;box-shadow:0 24px 50px -20px rgba(0,0,0,.55);overflow:hidden;position:relative;}
-.card.front{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:20px;}
-.card.front img{height:54px;}
-.card.front .info{font-family:var(--fb);font-size:11px;color:#444;line-height:1.5;}
-.card.front .info b{font-family:var(--fd);text-transform:uppercase;letter-spacing:.08em;color:var(--charcoal);font-size:12px;display:block;margin-bottom:3px;}
-.card.front .bar{position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--orange);}
-.card.back{background:var(--charcoal);display:grid;place-items:center;}
-.card.back .lk{display:flex;align-items:center;gap:12px;}
-.card.back .lk img{height:46px;}
-.card.back .lk .n{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:18px;letter-spacing:.04em;line-height:1;}
-.card.back .lk .s{font-family:var(--fd);font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-top:4px;}
-.sign{width:100%;max-width:440px;background:linear-gradient(180deg,#101216,#1b1f27);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:34px;display:flex;align-items:center;gap:18px;box-shadow:0 0 0 6px rgba(0,0,0,.18),0 30px 60px -20px rgba(242,146,46,.3);}
-.sign img{height:72px;}
-.sign .wm .n{font-family:var(--fd);font-weight:800;text-transform:uppercase;color:#fff;font-size:26px;letter-spacing:.03em;line-height:1;}
-.sign .wm .s{font-family:var(--fd);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-top:6px;}
-.merch{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;}
-.sticker{width:150px;height:150px;border-radius:50%;background:var(--charcoal);display:grid;place-items:center;border:5px solid var(--orange);box-shadow:0 16px 36px -12px rgba(0,0,0,.5);}
-.sticker img{width:74%;}
-.tee{width:190px;height:170px;background:#202329;border:1px solid rgba(255,255,255,.12);border-radius:14px;display:grid;place-items:center;position:relative;}
-.tee::before,.tee::after{content:"";position:absolute;top:18px;width:42px;height:42px;background:#202329;border:1px solid rgba(255,255,255,.12);border-radius:8px;}
-.tee::before{left:-14px;transform:rotate(34deg);}
-.tee::after{right:-14px;transform:rotate(-34deg);}
-.tee img{width:62%;position:relative;z-index:1;filter:brightness(0) invert(1);opacity:.92;}
-.webmock{width:100%;background:var(--carbon);border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;}
-.webmock .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
-.webmock .bar .lk{display:flex;align-items:center;gap:11px;}
-.webmock .bar .lk img{height:30px;}
-.webmock .bar .lk .n{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:15px;letter-spacing:.04em;}
-.webmock .bar .btn{font-family:var(--fd);text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:600;background:var(--orange);color:var(--charcoal);padding:9px 16px;border-radius:6px;}
-.webmock .body{padding:26px 20px;}
-.webmock .body .eb{font-family:var(--fd);text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:var(--orange);}
-.webmock .body .hl{font-family:var(--fd);font-weight:700;text-transform:uppercase;color:#fff;font-size:26px;line-height:1;margin-top:8px;}
+.sticker-showcase{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,36px);
+  align-items:start;
+}
+@media(max-width:760px){.sticker-showcase{grid-template-columns:1fr;}}
+.sticker-showcase figure{margin:0;}
+.sticker-showcase img{
+  width:100%;display:block;
+  filter:drop-shadow(0 22px 34px rgba(0,0,0,.45));
+}
+.sticker-showcase figcaption{
+  margin-top:16px;text-align:center;
+  font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;
+  font-size:13px;color:var(--muted);
+}
 
 /* ---------- voice ---------- */
 .voice{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
@@ -279,8 +256,8 @@ footer.bb .fl img{height:40px;}
   </div>
 </section>
 
-<!-- 02 MISUSE (dark) -->
-<section id="misuse" class="theme-dark">
+<!-- 02 MISUSE (white) -->
+<section id="misuse" class="theme-white">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">02 — Misuse</div>
@@ -348,66 +325,23 @@ footer.bb .fl img{height:40px;}
   </div>
 </section>
 
-<!-- 05 MOCKUPS (dark) -->
-<section id="mockups" class="theme-dark">
+<!-- 05 MOCKUPS (light) -->
+<section id="mockups" class="theme-light">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">05 — In the Wild</div>
-      <h2>Mockups</h2>
-      <p>How the brand shows up across the shop — print, signage, merch, and screen.</p>
+      <h2>Service Reminder Sticker</h2>
+      <p>The static-cling windshield sticker we leave in every car — a branded reminder for the next oil change and smog check that keeps All Model Repair on the dashboard until the customer's next visit.</p>
     </div>
-    <div class="mock-grid">
-      <div class="mock">
-        <div class="stage">
-          <div class="cards">
-            <div class="card front">
-              <img src="assets/logo-full.png" alt="" />
-              <div class="info"><b>Mike &amp; John</b>1305 S Glendale Ave, Ste 1 · Glendale, CA 91205<br />(818) 548-8242 · @allmodelrepair</div>
-              <div class="bar"></div>
-            </div>
-            <div class="card back">
-              <div class="lk">
-                <img src="assets/logo-icon.png" alt="" />
-                <div><div class="n">All Model Repair</div><div class="s">Foreign &amp; Domestic</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cap">Business Cards · Front &amp; Back</div>
-      </div>
-      <div class="mock">
-        <div class="stage">
-          <div class="sign">
-            <img src="assets/logo-icon.png" alt="" />
-            <div class="wm"><div class="n">All Model Repair</div><div class="s">Foreign &amp; Domestic</div></div>
-          </div>
-        </div>
-        <div class="cap">Illuminated Shop Sign</div>
-      </div>
-      <div class="mock">
-        <div class="stage">
-          <div class="merch">
-            <div class="sticker"><img src="assets/logo-icon.png" alt="" /></div>
-            <div class="tee"><img src="assets/logo-icon.png" alt="" /></div>
-          </div>
-        </div>
-        <div class="cap">Sticker &amp; Crew Shirt</div>
-      </div>
-      <div class="mock">
-        <div class="stage" style="padding:22px;">
-          <div class="webmock">
-            <div class="bar">
-              <div class="lk"><img src="assets/logo-icon.png" alt="" /><span class="n">All Model Repair</span></div>
-              <span class="btn">Call</span>
-            </div>
-            <div class="body">
-              <div class="eb">Family-Owned in Glendale</div>
-              <div class="hl">Honest Auto Repair<br />For Every Model.</div>
-            </div>
-          </div>
-        </div>
-        <div class="cap">Website Header</div>
-      </div>
+    <div class="sticker-showcase">
+      <figure>
+        <img src="assets/sticker-service.png" alt="All Model Repair service reminder windshield sticker, English" />
+        <figcaption>English</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/sticker-service-fa.png" alt="All Model Repair service reminder windshield sticker, Farsi" />
+        <figcaption>فارسی · Farsi</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -429,7 +363,7 @@ footer.bb .fl img{height:40px;}
   </div>
 </section>
 
-<footer class="bb theme-charcoal">
+<footer class="bb theme-light">
   <div class="wrap">
     <a class="backlink" href="index.html">← Back to the website</a>
     <div class="fl"><img src="assets/logo-icon.png" alt="All Model Repair" /></div>
