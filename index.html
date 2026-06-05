@@ -11,6 +11,9 @@
 <link rel="alternate" hreflang="x-default" href="https://www.allmodelrepair.com/" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 <meta name="theme-color" content="#F2922E" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
 <meta name="geo.region" content="US-CA" />
 <meta name="geo.placename" content="Glendale, California" />
 <meta name="geo.position" content="34.1377;-118.2549" />
@@ -175,6 +178,26 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         Call
       </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-mobile">
+        <svg class="ico-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <div class="wrap">
+      <a class="m-link" href="#services">Services</a>
+      <a class="m-link" href="#showcase">Our Work</a>
+      <a class="m-link" href="#why">Why Us</a>
+      <a class="m-link" href="#about">About</a>
+      <a class="m-link" href="#reviews">Reviews</a>
+      <a class="m-link" href="#faq">FAQ</a>
+      <a class="m-link" href="blog.html">Blog</a>
+      <a class="m-link" href="#contact">Contact</a>
+      <div class="m-cta">
+        <a class="btn btn-ghost" href="#contact">Book Now</a>
+        <a class="btn btn-primary" href="tel:8185488242">Call (818) 548-8242</a>
+      </div>
     </div>
   </div>
 </header>
@@ -223,7 +246,7 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">What We Do</span>
-      <h2 class="display">Full-Service Repair,<br />Under One Roof.</h2>
+      <h2 class="display">Full-Service Repair<br />Under One Roof</h2>
       <p class="lead">Mechanical, electrical, body work — if it drives in, we can fix it. Here's what we're known for around Glendale.</p>
     </div>
     <div class="svc-grid">
@@ -291,7 +314,7 @@
     <div class="section-head reveal">
       <span class="eyebrow">From Our Garage</span>
       <h2 class="display">DRIVE OUT RUNNING
-BETTER THAN EVER.</h2>
+BETTER THAN EVER</h2>
       <p class="lead">A look at the cars we've brought back to life — foreign and domestic, daily drivers to weekend toys. Yours could be next in the bay.</p>
     </div>
     <div class="showcase-grid">
@@ -337,7 +360,7 @@ BETTER THAN EVER.</h2>
   <div class="wrap split">
     <div class="reveal">
       <span class="eyebrow">Why Glendale Trusts Us</span>
-      <h2 class="display">The Mechanic<br />You Wish<br />You'd Found Sooner.</h2>
+      <h2 class="display">The Mechanic<br />You Wish<br />You'd Found Sooner</h2>
       <div class="feature-list">
         <div class="feature">
           <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
@@ -405,7 +428,7 @@ BETTER THAN EVER.</h2>
     </div>
     <div class="reveal">
       <span class="eyebrow">Our Story</span>
-      <h2 class="display">A Neighborhood<br />Shop That Earned<br />Its Reputation.</h2>
+      <h2 class="display">Neighborhood<br />Shop That Earned<br />Its Reputation</h2>
       <p class="lead">All Model Repair has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.</p>
       <p style="color:var(--muted); margin-top:18px;">It started simple and it stays simple: tell people the truth, charge a fair price, and do the job right. That's why neighbors keep sending neighbors. One reviewer put it best — "the most honest mechanic I have ever met." We'd like to earn that from you, too.</p>
       <div class="hero-actions" style="margin-top:30px;">
@@ -896,6 +919,19 @@ BETTER THAN EVER.</h2>
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+
+  // mobile nav toggle
+  var navToggle = document.getElementById('nav-toggle');
+  var navMobile = document.getElementById('nav-mobile');
+  if (navToggle && navMobile) {
+    function closeMenu() { navMobile.classList.remove('open'); navToggle.setAttribute('aria-expanded', 'false'); }
+    navToggle.addEventListener('click', function () {
+      var open = navMobile.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navMobile.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 1440) closeMenu(); });
+  }
 
   // hours: highlight today + open/closed status
   var now = new Date();
