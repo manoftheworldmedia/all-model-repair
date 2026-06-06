@@ -118,7 +118,7 @@ body.light {
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 
 body {
   margin: 0;
@@ -129,7 +129,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 img { max-width: 100%; display: block; }
@@ -313,7 +314,12 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   box-shadow: 0 18px 40px -16px rgba(16,18,22,.25);
 }
 .nav-mobile.open { display: block; }
-.nav-mobile .wrap { padding-block: 14px 22px; }
+.nav-mobile .wrap {
+  display: block;
+  height: auto;
+  max-width: none;
+  padding-block: 14px 22px;
+}
 .nav-mobile a.m-link {
   display: block;
   font-family: var(--font-display); text-transform: uppercase; letter-spacing: .06em;
@@ -332,6 +338,37 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 }
 @media (min-width: 1441px) {
   .nav-mobile { display: none !important; }
+}
+
+/* Phone nav: bottom bar handles Call, so the top nav is just logo + a big menu */
+@media (max-width: 760px) {
+  .nav .wrap { height: 64px; gap: 12px; }
+  .brand-icon { height: 38px; }
+  .nav .brand-wm-name { font-size: 18px; }
+  .nav .brand-wm-sub { font-size: 8.5px; letter-spacing: .26em; }
+  /* Call lives in the sticky bottom bar — remove it from the top nav */
+  .nav-cta .btn-primary { display: none; }
+  .nav-toggle {
+    width: 48px; height: 48px;
+    border-color: rgba(16,18,22,.22);
+  }
+  .nav-toggle svg { width: 26px; height: 26px; }
+
+  /* Full-width vertical menu that drops down with big tap targets */
+  .nav-mobile .wrap { padding-block: 6px 28px; }
+  .nav-mobile a.m-link {
+    font-size: 22px;
+    padding: 18px 2px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-mobile a.m-link::after {
+    content: "";
+    width: 9px; height: 9px; flex: none;
+    border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+    transform: rotate(-45deg);
+  }
+  .nav-mobile .m-cta { margin-top: 22px; gap: 12px; }
+  .nav-mobile .m-cta .btn { min-height: 54px; font-size: 18px; }
 }
 
 /* ---------- Hero (white) ---------- */
@@ -578,7 +615,10 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   align-items: start;
 }
 @media (max-width: 880px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-grid > * { min-width: 0; }
 .form-card {
+  min-width: 0;
+  max-width: 100%;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -596,6 +636,8 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 }
 .field input, .field select, .field textarea {
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   background: var(--bg-2);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius);
@@ -826,6 +868,8 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   grid-auto-flow: column;
   grid-auto-columns: clamp(150px, 19vw, 210px);
   gap: 12px;
+  min-width: 0;
+  max-width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 12px;
