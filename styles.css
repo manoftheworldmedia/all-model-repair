@@ -1095,3 +1095,55 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 .promise-point .pp-ico svg { width: 21px; height: 21px; }
 .promise-point .pp-text { font-family: var(--font-display); text-transform: uppercase; font-size: 17px; letter-spacing: 0.02em; line-height: 1.1; color: var(--text); }
 
+/* ============================================================
+   Sticky mobile action bar — phones only
+   ============================================================ */
+.mobile-bar { display: none; }
+@media (max-width: 760px) {
+  .mobile-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 80;
+    background: #14171c;
+    border-top: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 -8px 24px rgba(0,0,0,.28);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .mb-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 60px;
+    padding: 8px 4px;
+    color: #fff;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+  }
+  .mb-btn svg { width: 22px; height: 22px; }
+  .mb-btn + .mb-btn::before {
+    content: ""; position: absolute; left: 0; top: 14px; bottom: 14px;
+    width: 1px; background: rgba(255,255,255,.14);
+  }
+  .mb-call { color: #fff; }
+  .mb-call svg { color: var(--accent); }
+  .mb-text { background: var(--accent); color: var(--accent-ink); }
+  .mb-text svg { color: var(--accent-ink); }
+  .mb-text + .mb-btn::before, .mb-text::before { display: none; }
+  .mb-dir svg { color: var(--accent); }
+  .mb-btn:active { filter: brightness(.88); }
+
+  /* keep content clear of the bar */
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+  /* float the Tweaks/IG actions above the bar if present */
+  .ig-band { margin-bottom: 8px; }
+}
+
