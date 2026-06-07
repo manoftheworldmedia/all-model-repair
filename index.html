@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=20260607d" />
+<link rel="stylesheet" href="styles.css?v=20260607e" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -218,7 +218,7 @@
     <div class="hero-content">
       <span class="eyebrow">THE MOST TRUSTED MECHANICS IN GLENDALE</span>
       <h1 class="display">Trusted Auto Repair For <span class="accent">Every Make</span> &amp; Every Model</h1>
-      <p class="lead">From brakes to engines, electrical to smog — Jano and the team have kept Glendale on the road for over 20 years. Straight answers, honest prices, work done right the first time.</p>
+      <p class="lead">From brakes to engines, electrical to smog, Jano and the team have kept Glendale on the road for over 20 years. Straight answers, honest prices, work done right the first time. Make an appointment or drop in, we're waiting.</p>
       <div class="hero-actions">
         <a class="btn btn-primary btn-lg" href="#contact">Request an Appointment</a>
         <a class="btn btn-dark btn-lg" href="tel:8185488242">
@@ -229,7 +229,7 @@
       <div class="trust">
         <div class="trust-item">
           <div class="t-num">4.6<span class="star">★</span></div>
-          <div class="t-label">Yelp Rated</div>
+          <div class="t-label">RATED</div>
         </div>
         <div class="trust-item">
           <div class="t-num">22+</div>
@@ -427,10 +427,8 @@ BETTER THAN EVER</h2>
     </div>
     <div class="reveal">
       <span class="eyebrow">Our Story</span>
-      <h2 class="display">NEIGHBORHOOD
-SHOP THAT'S EARNED
-ITS REPUTATION</h2>
-      <p class="lead">All Model Repair has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.</p>
+      <h2 class="display">THE SHOP THAT'S EARNED ITS REPUTATION</h2>
+      <p class="lead">All Model Repair is a neighborhood shop that has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.</p>
       <p style="color:var(--muted); margin-top:18px;">It started simple and it stays simple: tell people the truth, charge a fair price, and do the job right. That's why neighbors keep sending neighbors. One reviewer put it best — "the most honest mechanic I have ever met." We'd like to earn that from you, too.</p>
       <div class="hero-actions" style="margin-top:30px;">
         <a class="btn btn-primary" href="#contact">Book a Visit</a>
@@ -476,36 +474,54 @@ ITS REPUTATION</h2>
         <span class="rb-score">4.6</span>
         <span class="rb-mid">
           <span class="rb-stars">★★★★½</span>
-          <span class="rb-count">Based on 22+ reviews</span>
         </span>
-        <span class="rb-yelp">yelp</span>
       </div>
     </div>
-    <div class="review-grid">
-      <article class="review reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"The most honest mechanic I have ever met. Very professional."</blockquote>
-        <div class="r-by">
-          <div class="r-avatar">M</div>
-          <div><div class="r-name">Masoud M.</div><div class="r-src">Google Review</div></div>
-        </div>
-      </article>
-      <article class="review reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"The prices here are the best you can find in Glendale — by far. They are not all about money like so many other shops."</blockquote>
-        <div class="r-by">
-          <div class="r-avatar">Y</div>
-          <div><div class="r-name">Yelp Customer</div><div class="r-src">Yelp Review</div></div>
-        </div>
-      </article>
-      <article class="review reveal">
-        <div class="stars">★★★★★</div>
-        <blockquote>"John and his team are fantastic. They work on many different kinds of cars, and do great work!"</blockquote>
-        <div class="r-by">
-          <div class="r-avatar">S</div>
-          <div><div class="r-name">Studio Motorsports</div><div class="r-src">Google Review</div></div>
-        </div>
-      </article>
+    <div class="review-marquee" aria-label="Customer reviews">
+      <div class="review-track" id="review-track">
+        <!-- Peter W · Yelp -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-yelp">Yelp</span></div>
+          <blockquote>Jano and the team work fast and always look out for my best interest. They are the neighborhood car shop you look forward to going to.</blockquote>
+          <div class="r-by"><span class="r-avatar">P</span><span class="r-name">Peter W.</span></div>
+        </article>
+        <!-- Andrew · Google -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-google">Google</span></div>
+          <blockquote>Very good professionals, honest people, great price.</blockquote>
+          <div class="r-by"><span class="r-avatar">A</span><span class="r-name">Andrew Gorgy</span></div>
+        </article>
+        <!-- Hristijan · Yelp -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-yelp">Yelp</span></div>
+          <blockquote>I get all my smog checks and repairs done here — fast, reliable and honest service. Highly recommend!</blockquote>
+          <div class="r-by"><span class="r-avatar">H</span><span class="r-name">Hristijan G.</span></div>
+        </article>
+        <!-- Paul · Google -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-google">Google</span></div>
+          <blockquote>I've taken several of the cars I've owned over the years to John, and he's always been transparent about my options and fixed the car right the first time, at a fair price.</blockquote>
+          <div class="r-by"><span class="r-avatar">P</span><span class="r-name">Paul Alemann</span></div>
+        </article>
+        <!-- Shant · Yelp -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-yelp">Yelp</span></div>
+          <blockquote>Knowledgeable, affordable, fast, and experienced repair shop! Would recommend to anyone in the area looking for regular maintenance, smog checks, and any other repairs.</blockquote>
+          <div class="r-by"><span class="r-avatar">S</span><span class="r-name">Shant B.</span></div>
+        </article>
+        <!-- Lawrence · Yelp -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-yelp">Yelp</span></div>
+          <blockquote>The absolute best! So much attention and care — I absolutely loved my experience. Very professional, receptive, and knowledgeable.</blockquote>
+          <div class="r-by"><span class="r-avatar">L</span><span class="r-name">Lawrence T.</span></div>
+        </article>
+        <!-- Gilbert · Yelp -->
+        <article class="rev">
+          <div class="rev-top"><span class="stars">★★★★★</span><span class="src src-yelp">Yelp</span></div>
+          <blockquote>Fantastic service, quick and responsive — open Saturdays til noon. Got in early, had my car tuned up, and I was back on the road. Thank you!</blockquote>
+          <div class="r-by"><span class="r-avatar">G</span><span class="r-name">Gilbert M.</span></div>
+        </article>
+      </div>
     </div>
     <div style="text-align:center; margin-top:40px;" class="reveal">
       <a class="btn btn-ghost" href="https://www.yelp.com/biz/all-model-auto-repair-glendale" target="_blank" rel="noopener">See All Reviews on Yelp</a>
@@ -1012,6 +1028,13 @@ BACK ON THE ROAD</h2>
       document.getElementById('form-success').classList.add('show');
       window.location.href = smsLink;
     });
+  }
+
+  // reviews marquee — clone cards for a seamless infinite loop
+  var revTrack = document.getElementById('review-track');
+  if (revTrack) {
+    var originals = revTrack.innerHTML;
+    revTrack.innerHTML = originals + originals; // duplicate set; CSS animates to -50%
   }
 
   // reveal on scroll (with fail-safe so content can never stay hidden)
