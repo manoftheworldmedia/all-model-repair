@@ -10,8 +10,16 @@
   "use strict";
 
   var LANG = (document.documentElement.getAttribute("lang") || "en").toLowerCase().indexOf("fa") === 0 ? "fa" : "en";
-  var CONTENT_FILE = LANG === "fa" ? "content.fa.json" : "content.json";
-  var FAQ_FILE = LANG === "fa" ? "faq.fa.json" : "faq.json";
+  var CONTENT_FILE = "content.json";
+  var FAQ_FILE = "faq.json";
+
+  // paired fields: { en, fa } -> the current language's value (falls back to en)
+  function pick(v) {
+    if (v && typeof v === "object" && !Array.isArray(v) && ("en" in v || "fa" in v)) {
+      return v[LANG] != null && v[LANG] !== "" ? v[LANG] : v.en;
+    }
+    return v;
+  }
 
   // FAQ category tab labels per language (order matters)
   var FAQ_CATS = {
@@ -76,7 +84,7 @@
 
     // simple [data-cms="path"] text bindings
     document.querySelectorAll("[data-cms]").forEach(function (el) {
-      var val = resolve(c, el.getAttribute("data-cms"));
+      var val = pick(resolve(c, el.getAttribute("data-cms")));
       if (val != null && typeof val !== "object") el.textContent = val;
     });
 
@@ -84,9 +92,9 @@
     if (c.hero) {
       var h = document.querySelector('[data-cms-html="hero.headline"]');
       if (h) {
-        h.innerHTML = esc(c.hero.headlinePre) +
-          '<span class="accent">' + esc(c.hero.headlineAccent) + "</span>" +
-          esc(c.hero.headlinePost);
+        h.innerHTML = esc(pick(c.hero.headlinePre)) +
+          '<span class="accent">' + esc(pick(c.hero.headlineAccent)) + "</span>" +
+          esc(pick(c.hero.headlinePost));
       }
     }
 
@@ -106,7 +114,7 @@
     if (c.address) {
       var a = c.address;
       document.querySelectorAll('[data-cms-address]').forEach(function (el) {
-        el.innerHTML = esc(a.street) + "<br />" + esc(a.cityLine);
+        el.innerHTML = esc(pick(a.street)) + "<br />" + esc(pick(a.cityLine));
       });
       if (a.mapQuery) {
         var mapUrl = "https://www.google.com/maps?q=" + encodeURIComponent(a.mapQuery);
@@ -125,8 +133,8 @@
           var icon = ICONS[s.icon] || ICONS.general;
           return '<article class="svc reveal in">' +
             '<div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + icon + "</svg></div>" +
-            "<h3>" + esc(s.title) + "</h3>" +
-            "<p>" + esc(s.text) + "</p>" +
+            "<h3>" + esc(pick(s.title)) + "</h3>" +
+            "<p>" + esc(pick(s.text)) + "</p>" +
             "</article>";
         }).join("");
       }
@@ -160,7 +168,7 @@
     if (table) {
       table.innerHTML = hours.map(function (row, i) {
         return '<tr' + (i === todayIdx ? ' class="today"' : "") + "><td>" +
-          esc(row.day) + "</td><td>" + esc(row.hours) + "</td></tr>";
+          esc(pick(row.day)) + "</td><td>" + esc(pick(row.hours)) + "</td></tr>";
       }).join("");
     }
     // open-now status
@@ -168,10 +176,11 @@
     var statusEl = document.getElementById("open-status");
     var todayEl = document.getElementById("hours-today");
     if (!todayRow) return;
-    var isClosedDay = /closed|تعطیل|بسته/i.test(todayRow.hours);
-    var open = false, label = todayRow.hours;
+    var todayHours = pick(todayRow.hours);
+    var isClosedDay = /closed|تعطیل|بسته/i.test(todayHours);
+    var open = false, label = todayHours;
     if (!isClosedDay) {
-      var parts = todayRow.hours.split(/[–-]/);
+      var parts = todayHours.split(/[–-]/);
       if (parts.length === 2) {
         var o = parseMinutes(parts[0]), cl = parseMinutes(parts[1]);
         var now = new Date(); var mins = now.getHours() * 60 + now.getMinutes();
@@ -208,8 +217,8 @@
       "mainEntity": items.map(function (it) {
         return {
           "@type": "Question",
-          "name": it.question,
-          "acceptedAnswer": { "@type": "Answer", "text": it.answer }
+          "name": pick(it.question),
+          "acceptedAnswer": { "@type": "Answer", "text": pick(it.answer) }
         };
       })
     };
@@ -241,8 +250,8 @@
     list.innerHTML = items.map(function (it) {
       var hidden = it.category === firstCat ? "" : " hidden";
       return '<div class="faq-item reveal in" data-cat="' + esc(it.category) + '"' + hidden + ">" +
-        '<button class="faq-q">' + esc(it.question) + ' <span class="pm">+</span></button>' +
-        '<div class="faq-a"><p>' + linkifyPhones(it.answer) + "</p></div>" +
+        '<button class="faq-q">' + esc(pick(it.question)) + ' <span class="pm">+</span></button>' +
+        '<div class="faq-a"><p>' + linkifyPhones(pick(it.answer)) + "</p></div>" +
         "</div>";
     }).join("");
 

@@ -2,41 +2,227 @@
   "phone": "(818) 548-8242",
   "smsPhone": "+18186539789",
   "address": {
-    "street": "1305 S Glendale Ave, Ste 1",
-    "cityLine": "Glendale, CA 91205",
+    "street": {
+      "en": "1305 S Glendale Ave, Ste 1",
+      "fa": "۱۳۰۵ خیابان ساوت گلندل، واحد ۱"
+    },
+    "cityLine": {
+      "en": "Glendale, CA 91205",
+      "fa": "گلندل، کالیفرنیا ۹۱۲۰۵"
+    },
     "mapQuery": "1305 S Glendale Ave Glendale CA 91205"
   },
   "hero": {
-    "eyebrow": "THE MOST TRUSTED MECHANICS IN GLENDALE",
-    "headlinePre": "Trusted Auto Repair For ",
-    "headlineAccent": "Every Make",
-    "headlinePost": " & Every Model",
-    "lead": "From brakes to engines, electrical to smog, Jano and the team have kept Glendale on the road for over 20 years. Straight answers, honest prices, work done right the first time. Make an appointment or drop in, we're waiting."
+    "eyebrow": {
+      "en": "THE MOST TRUSTED MECHANICS IN GLENDALE",
+      "fa": "کسب‌وکار خانوادگی و قابل اعتماد در گلندل"
+    },
+    "headlinePre": {
+      "en": "Trusted Auto Repair For ",
+      "fa": "تعمیر صادقانهٔ خودرو برای "
+    },
+    "headlineAccent": {
+      "en": "Every Make",
+      "fa": "هر برند"
+    },
+    "headlinePost": {
+      "en": " & Every Model",
+      "fa": " و هر مدل"
+    },
+    "lead": {
+      "en": "From brakes to engines, electrical to smog, Jano and the team have kept Glendale on the road for over 20 years. Straight answers, honest prices, work done right the first time. Make an appointment or drop in, we're waiting.",
+      "fa": "از ترمز تا موتور، از برق تا تست آلایندگی — جانو و تیمش بیش از ۲۰ سال است که گلندل را در جاده نگه داشته‌اند. پاسخ صادقانه، قیمت منصفانه، و کار درست از همان بار اول."
+    }
   },
   "services": [
-    { "icon": "general", "title": "General Repair", "text": "Whatever's wrong, we diagnose it straight and fix it right — no upsell, no guesswork." },
-    { "icon": "brakes", "title": "Brakes", "text": "Pads, rotors, lines and full inspections so you stop safe and quiet, every time." },
-    { "icon": "engine", "title": "Engine Repair & Rebuild", "text": "From check-engine lights to full rebuilds — decades of hands-on engine experience." },
-    { "icon": "transmission", "title": "Transmission", "text": "Fluid service, repairs and replacements for smooth, reliable shifting." },
-    { "icon": "electrical", "title": "Electrical Diagnostics", "text": "Batteries, alternators, sensors and wiring gremlins — found fast and fixed." },
-    { "icon": "smog", "title": "Catalytic & Smog", "text": "Failed your smog check? We'll get the right fix at a fair price and back on the road." },
-    { "icon": "ac", "title": "A/C & Heating", "text": "Recharges, leaks and climate repairs to keep you comfortable in any season." },
-    { "icon": "body", "title": "Body & Dent Repair", "text": "Dings, dents and bumper work — cosmetic fixes handled in-house." },
-    { "icon": "tuneup", "title": "Tune-Ups & Maintenance", "text": "Oil, fluids, filters and factory-schedule service to prevent the big bills." }
+    {
+      "icon": "general",
+      "title": {
+        "en": "General Repair",
+        "fa": "تعمیرات عمومی"
+      },
+      "text": {
+        "en": "Whatever's wrong, we diagnose it straight and fix it right — no upsell, no guesswork.",
+        "fa": "هر مشکلی که باشد، صادقانه عیب‌یابی و درست تعمیرش می‌کنیم — بدون فروش اضافی و بدون حدس و گمان."
+      }
+    },
+    {
+      "icon": "brakes",
+      "title": {
+        "en": "Brakes",
+        "fa": "ترمز"
+      },
+      "text": {
+        "en": "Pads, rotors, lines and full inspections so you stop safe and quiet, every time.",
+        "fa": "لنت، دیسک، لوله‌ها و بازرسی کامل تا هر بار ایمن و بی‌صدا متوقف شوید."
+      }
+    },
+    {
+      "icon": "engine",
+      "title": {
+        "en": "Engine Repair & Rebuild",
+        "fa": "تعمیر و تعمیر اساسی موتور"
+      },
+      "text": {
+        "en": "From check-engine lights to full rebuilds — decades of hands-on engine experience.",
+        "fa": "از چراغ چک موتور تا تعمیر اساسی کامل — ده‌ها سال تجربهٔ عملی روی موتور."
+      }
+    },
+    {
+      "icon": "transmission",
+      "title": {
+        "en": "Transmission",
+        "fa": "گیربکس"
+      },
+      "text": {
+        "en": "Fluid service, repairs and replacements for smooth, reliable shifting.",
+        "fa": "تعویض روغن، تعمیر و تعویض برای تعویض دندهٔ نرم و قابل اعتماد."
+      }
+    },
+    {
+      "icon": "electrical",
+      "title": {
+        "en": "Electrical Diagnostics",
+        "fa": "عیب‌یابی برقی"
+      },
+      "text": {
+        "en": "Batteries, alternators, sensors and wiring gremlins — found fast and fixed.",
+        "fa": "باتری، دینام، سنسورها و مشکلات سیم‌کشی — سریع پیدا و برطرف می‌شود."
+      }
+    },
+    {
+      "icon": "smog",
+      "title": {
+        "en": "Catalytic & Smog",
+        "fa": "کاتالیزور و تست آلایندگی"
+      },
+      "text": {
+        "en": "Failed your smog check? We'll get the right fix at a fair price and back on the road.",
+        "fa": "در تست آلایندگی رد شدید؟ با قیمت منصفانه درستش می‌کنیم و دوباره به جاده برمی‌گردید."
+      }
+    },
+    {
+      "icon": "ac",
+      "title": {
+        "en": "A/C & Heating",
+        "fa": "کولر و بخاری"
+      },
+      "text": {
+        "en": "Recharges, leaks and climate repairs to keep you comfortable in any season.",
+        "fa": "شارژ گاز، رفع نشتی و تعمیر سیستم تهویه تا در هر فصل راحت باشید."
+      }
+    },
+    {
+      "icon": "body",
+      "title": {
+        "en": "Body & Dent Repair",
+        "fa": "صافکاری و تعمیر بدنه"
+      },
+      "text": {
+        "en": "Dings, dents and bumper work — cosmetic fixes handled in-house.",
+        "fa": "خط‌وخش، فرورفتگی و کار سپر — تعمیرات ظاهری در خود تعمیرگاه."
+      }
+    },
+    {
+      "icon": "tuneup",
+      "title": {
+        "en": "Tune-Ups & Maintenance",
+        "fa": "تنظیم و سرویس دوره‌ای"
+      },
+      "text": {
+        "en": "Oil, fluids, filters and factory-schedule service to prevent the big bills.",
+        "fa": "روغن، مایعات، فیلترها و سرویس طبق برنامهٔ کارخانه برای جلوگیری از هزینه‌های بزرگ."
+      }
+    }
   ],
   "about": {
-    "eyebrow": "Our Story",
-    "heading": "THE SHOP THAT'S EARNED ITS REPUTATION",
-    "lead": "All Model Repair is a neighborhood shop that has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.",
-    "body": "It started simple and it stays simple: tell people the truth, charge a fair price, and do the job right. That's why neighbors keep sending neighbors. One reviewer put it best — \"the most honest mechanic I have ever met.\" We'd like to earn that from you, too."
+    "eyebrow": {
+      "en": "Our Story",
+      "fa": "داستان ما"
+    },
+    "heading": {
+      "en": "THE SHOP THAT'S EARNED ITS REPUTATION",
+      "fa": "تعمیرگاهی محله‌ای که اعتبارش را به‌دست آورده"
+    },
+    "lead": {
+      "en": "All Model Repair is a neighborhood shop that has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.",
+      "fa": "آل مادل ریپر بیش از ۲۰ سال است که در خیابان ساوت گلندل قرار دارد — آن‌قدر که حالا خودروی مشتریانی را تعمیر می‌کنیم که سال‌ها پیش شناختیم، و اکنون خودروی فرزندانشان را هم."
+    },
+    "body": {
+      "en": "It started simple and it stays simple: tell people the truth, charge a fair price, and do the job right. That's why neighbors keep sending neighbors. One reviewer put it best — \"the most honest mechanic I have ever met.\" We'd like to earn that from you, too.",
+      "fa": "از روز اول ساده شروع شد و ساده ماند: حقیقت را به مردم بگو، قیمت منصفانه بگیر، و کار را درست انجام بده. به همین دلیل همسایه‌ها همسایه‌های دیگر را می‌فرستند. یکی از مشتریان بهتر از همه گفت — «صادق‌ترین مکانیکی که در عمرم دیده‌ام.» دوست داریم این اعتماد را از شما هم به‌دست بیاوریم."
+    }
   },
   "hours": [
-    { "day": "Monday", "hours": "8:30 AM – 5:00 PM" },
-    { "day": "Tuesday", "hours": "8:30 AM – 5:00 PM" },
-    { "day": "Wednesday", "hours": "8:30 AM – 5:00 PM" },
-    { "day": "Thursday", "hours": "8:30 AM – 5:00 PM" },
-    { "day": "Friday", "hours": "8:30 AM – 5:00 PM" },
-    { "day": "Saturday", "hours": "8:30 AM – 12:00 PM" },
-    { "day": "Sunday", "hours": "Closed" }
+    {
+      "day": {
+        "en": "Monday",
+        "fa": "دوشنبه"
+      },
+      "hours": {
+        "en": "8:30 AM – 5:00 PM",
+        "fa": "۸:۳۰ صبح – ۵:۰۰ عصر"
+      }
+    },
+    {
+      "day": {
+        "en": "Tuesday",
+        "fa": "سه‌شنبه"
+      },
+      "hours": {
+        "en": "8:30 AM – 5:00 PM",
+        "fa": "۸:۳۰ صبح – ۵:۰۰ عصر"
+      }
+    },
+    {
+      "day": {
+        "en": "Wednesday",
+        "fa": "چهارشنبه"
+      },
+      "hours": {
+        "en": "8:30 AM – 5:00 PM",
+        "fa": "۸:۳۰ صبح – ۵:۰۰ عصر"
+      }
+    },
+    {
+      "day": {
+        "en": "Thursday",
+        "fa": "پنجشنبه"
+      },
+      "hours": {
+        "en": "8:30 AM – 5:00 PM",
+        "fa": "۸:۳۰ صبح – ۵:۰۰ عصر"
+      }
+    },
+    {
+      "day": {
+        "en": "Friday",
+        "fa": "جمعه"
+      },
+      "hours": {
+        "en": "8:30 AM – 5:00 PM",
+        "fa": "۸:۳۰ صبح – ۵:۰۰ عصر"
+      }
+    },
+    {
+      "day": {
+        "en": "Saturday",
+        "fa": "شنبه"
+      },
+      "hours": {
+        "en": "8:30 AM – 12:00 PM",
+        "fa": "۸:۳۰ صبح – ۱۲:۰۰ ظهر"
+      }
+    },
+    {
+      "day": {
+        "en": "Sunday",
+        "fa": "یکشنبه"
+      },
+      "hours": {
+        "en": "Closed",
+        "fa": "تعطیل"
+      }
+    }
   ]
 }

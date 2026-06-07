@@ -2,118 +2,256 @@
   "items": [
     {
       "category": "general",
-      "question": "Do you work on all makes and models?",
-      "answer": "Yes. All Model Repair services domestic, European, Asian, and luxury vehicles — including BMW, Mercedes-Benz, Audi, Porsche, Lexus, Toyota, Honda, Nissan, Ford, Chevrolet, and more."
+      "question": {
+        "en": "Do you work on all makes and models?",
+        "fa": "روی همهٔ برندها و مدل‌ها کار می‌کنید؟"
+      },
+      "answer": {
+        "en": "Yes. All Model Repair services domestic, European, Asian, and luxury vehicles — including BMW, Mercedes-Benz, Audi, Porsche, Lexus, Toyota, Honda, Nissan, Ford, Chevrolet, and more.",
+        "fa": "بله. آل مادل ریپر خودروهای داخلی، اروپایی، آسیایی و لوکس را سرویس می‌کند — از جمله ب‌ام‌و، مرسدس‌بنز، آئودی، پورشه، لکسوس، تویوتا، هوندا، نیسان، فورد، شورولت و بیشتر."
+      }
     },
     {
       "category": "general",
-      "question": "Where is All Model Repair located?",
-      "answer": "We're in Glendale, California, at 1305 S Glendale Ave #1 — serving Glendale, Atwater Village, Burbank, Eagle Rock, Pasadena, Silver Lake, and greater Los Angeles."
+      "question": {
+        "en": "Where is All Model Repair located?",
+        "fa": "آل مادل ریپر کجاست؟"
+      },
+      "answer": {
+        "en": "We're in Glendale, California, at 1305 S Glendale Ave #1 — serving Glendale, Atwater Village, Burbank, Eagle Rock, Pasadena, Silver Lake, and greater Los Angeles.",
+        "fa": "ما در گلندل کالیفرنیا، به نشانی ۱۳۰۵ خیابان ساوت گلندل واحد ۱ هستیم — و به گلندل، اتواتر ویلج، بربنک، ایگل راک، پاسادینا، سیلور لیک و کل لس‌آنجلس خدمات می‌دهیم."
+      }
     },
     {
       "category": "general",
-      "question": "Do I need an appointment for auto repair?",
-      "answer": "Appointments are recommended, but walk-ins are welcome depending on shop availability. Calling ahead helps us diagnose issues faster and reduce wait times."
+      "question": {
+        "en": "Do I need an appointment for auto repair?",
+        "fa": "برای تعمیر خودرو به نوبت نیاز دارم؟"
+      },
+      "answer": {
+        "en": "Appointments are recommended, but walk-ins are welcome depending on shop availability. Calling ahead helps us diagnose issues faster and reduce wait times.",
+        "fa": "گرفتن نوبت توصیه می‌شود، اما بسته به ظرفیت تعمیرگاه از مراجعهٔ بدون نوبت هم استقبال می‌کنیم. تماس قبلی کمک می‌کند سریع‌تر عیب‌یابی کنیم و زمان انتظار کمتر شود."
+      }
     },
     {
       "category": "general",
-      "question": "How long does a diagnostic take?",
-      "answer": "Most diagnostics begin the same day. Timing depends on the issue, vehicle complexity, and parts availability."
+      "question": {
+        "en": "How long does a diagnostic take?",
+        "fa": "عیب‌یابی چقدر طول می‌کشد؟"
+      },
+      "answer": {
+        "en": "Most diagnostics begin the same day. Timing depends on the issue, vehicle complexity, and parts availability.",
+        "fa": "بیشتر عیب‌یابی‌ها همان روز شروع می‌شود. زمان آن به نوع مشکل، پیچیدگی خودرو و در دسترس بودن قطعات بستگی دارد."
+      }
     },
     {
       "category": "general",
-      "question": "Do you provide estimates before work begins?",
-      "answer": "Yes. We provide clear estimates before repairs are performed, so you understand the scope of work and expected costs before we touch a wrench."
+      "question": {
+        "en": "Do you provide estimates before work begins?",
+        "fa": "قبل از شروع کار برآورد هزینه می‌دهید؟"
+      },
+      "answer": {
+        "en": "Yes. We provide clear estimates before repairs are performed, so you understand the scope of work and expected costs before we touch a wrench.",
+        "fa": "بله. پیش از انجام تعمیرات برآورد روشنی ارائه می‌دهیم تا از دامنهٔ کار و هزینهٔ موردانتظار آگاه باشید — پیش از آنکه دست به آچار ببریم."
+      }
     },
     {
       "category": "general",
-      "question": "Need a tow?",
-      "answer": "Can't get to us? We work hand-in-hand with a trusted local towing partner, Hovik Towing, who can bring your vehicle straight to our shop — then we take it from there. Call Hovik Towing at (818) 268-9998."
+      "question": {
+        "en": "Need a tow?",
+        "fa": "به یدک‌کش نیاز دارید؟"
+      },
+      "answer": {
+        "en": "Can't get to us? We work hand-in-hand with a trusted local towing partner, Hovik Towing, who can bring your vehicle straight to our shop — then we take it from there. Call Hovik Towing at (818) 268-9998.",
+        "fa": "نمی‌توانید خودرو را تا تعمیرگاه برسانید؟ با شریک یدک‌کش محلی و مورد اعتماد ما، یدک‌کش هوویک، همکاری می‌کنیم که خودروی شما را مستقیم به تعمیرگاه می‌آورد — بقیه را به ما بسپارید. تماس با یدک‌کش هوویک: (818) 268-9998."
+      }
     },
     {
       "category": "repairs",
-      "question": "Why is my check engine light on?",
-      "answer": "A check engine light can indicate anything from a loose gas cap to engine, ignition, emissions, or sensor-related issues. Diagnostic scanning helps identify the exact cause."
+      "question": {
+        "en": "Why is my check engine light on?",
+        "fa": "چرا چراغ چک موتورم روشن است؟"
+      },
+      "answer": {
+        "en": "A check engine light can indicate anything from a loose gas cap to engine, ignition, emissions, or sensor-related issues. Diagnostic scanning helps identify the exact cause.",
+        "fa": "چراغ چک می‌تواند از یک درپوش شل باک بنزین تا مشکلات موتور، جرقه، آلایندگی یا سنسورها را نشان دهد. اسکن عیب‌یابی به شناسایی علت دقیق کمک می‌کند."
+      }
     },
     {
       "category": "repairs",
-      "question": "How often should I change my oil in LA traffic?",
-      "answer": "Most vehicles driving regularly in Glendale and Los Angeles traffic should get oil changes every 5,000–7,500 miles, depending on oil type, driving habits, heat exposure, and manufacturer recommendations."
+      "question": {
+        "en": "How often should I change my oil in LA traffic?",
+        "fa": "در ترافیک لس‌آنجلس هر چند وقت روغن عوض کنم؟"
+      },
+      "answer": {
+        "en": "Most vehicles driving regularly in Glendale and Los Angeles traffic should get oil changes every 5,000–7,500 miles, depending on oil type, driving habits, heat exposure, and manufacturer recommendations.",
+        "fa": "بیشتر خودروهایی که مرتب در ترافیک گلندل و لس‌آنجلس تردد می‌کنند، بسته به نوع روغن، سبک رانندگی، گرما و توصیهٔ سازنده باید هر ۵٬۰۰۰ تا ۷٬۵۰۰ مایل روغن را تعویض کنند."
+      }
     },
     {
       "category": "repairs",
-      "question": "Why are my brakes squeaking?",
-      "answer": "Brake squeaking may result from worn brake pads, dust buildup, rotor wear, moisture, or hardware issues. A brake inspection can determine whether replacement is needed."
+      "question": {
+        "en": "Why are my brakes squeaking?",
+        "fa": "چرا ترمزهایم جیغ می‌کشد؟"
+      },
+      "answer": {
+        "en": "Brake squeaking may result from worn brake pads, dust buildup, rotor wear, moisture, or hardware issues. A brake inspection can determine whether replacement is needed.",
+        "fa": "صدای جیغ ترمز می‌تواند ناشی از لنت‌های ساییده‌شده، تجمع گردوغبار، سایش دیسک، رطوبت یا مشکلات قطعات باشد. بازرسی ترمز مشخص می‌کند که آیا نیاز به تعویض دارد یا نه."
+      }
     },
     {
       "category": "repairs",
-      "question": "What causes a car to overheat in Southern California?",
-      "answer": "Common causes include coolant leaks, radiator problems, failing thermostats, water pump issues, or extreme heat combined with stop-and-go traffic conditions."
+      "question": {
+        "en": "What causes a car to overheat in Southern California?",
+        "fa": "چه چیزی باعث جوش آوردن خودرو در جنوب کالیفرنیا می‌شود؟"
+      },
+      "answer": {
+        "en": "Common causes include coolant leaks, radiator problems, failing thermostats, water pump issues, or extreme heat combined with stop-and-go traffic conditions.",
+        "fa": "دلایل رایج شامل نشتی مایع خنک‌کننده، مشکلات رادیاتور، خرابی ترموستات، مشکلات واتر پمپ، یا گرمای شدید همراه با ترافیک متوقف‌وحرکت است."
+      }
     },
     {
       "category": "repairs",
-      "question": "Do you service European cars in Glendale?",
-      "answer": "Yes. We service European vehicles including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, MINI, and Land Rover."
+      "question": {
+        "en": "Do you service European cars in Glendale?",
+        "fa": "خودروهای اروپایی را در گلندل سرویس می‌کنید؟"
+      },
+      "answer": {
+        "en": "Yes. We service European vehicles including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, MINI, and Land Rover.",
+        "fa": "بله. خودروهای اروپایی از جمله ب‌ام‌و، مرسدس‌بنز، آئودی، فولکس‌واگن، پورشه، مینی و لندروور را سرویس می‌کنیم."
+      }
     },
     {
       "category": "repairs",
-      "question": "Do you do smog checks?",
-      "answer": "We handle the diagnosis and repairs that get your vehicle ready to pass California's smog inspection — including check-engine, emissions, and catalytic converter issues. If your car needs a smog repair before certification, that's exactly what we do. Call us at (818) 548-8242 and we'll let you know the fastest way to get you smog-ready."
+      "question": {
+        "en": "Do you do smog checks?",
+        "fa": "آیا تست آلایندگی (اسماگ) انجام می‌دهید؟"
+      },
+      "answer": {
+        "en": "We handle the diagnosis and repairs that get your vehicle ready to pass California's smog inspection — including check-engine, emissions, and catalytic converter issues. If your car needs a smog repair before certification, that's exactly what we do. Call us at (818) 548-8242 and we'll let you know the fastest way to get you smog-ready.",
+        "fa": "ما عیب‌یابی و تعمیراتی را انجام می‌دهیم که خودروی شما را برای قبولی در تست آلایندگی کالیفرنیا آماده می‌کند — از جمله مشکلات چراغ چک، آلایندگی و کاتالیزور. اگر خودرو پیش از صدور گواهی به تعمیر نیاز دارد، دقیقاً کار ماست. با شمارهٔ (818) 548-8242 تماس بگیرید تا سریع‌ترین راه آماده‌سازی را به شما بگوییم."
+      }
     },
     {
       "category": "repairs",
-      "question": "My car failed smog — can you help?",
-      "answer": "Absolutely. Failed smog is one of our specialties, including catalytic converter repair. We'll find the real cause, give you a fair price, and get you passing."
+      "question": {
+        "en": "My car failed smog — can you help?",
+        "fa": "خودرویم در تست آلایندگی رد شد — می‌توانید کمک کنید؟"
+      },
+      "answer": {
+        "en": "Absolutely. Failed smog is one of our specialties, including catalytic converter repair. We'll find the real cause, give you a fair price, and get you passing.",
+        "fa": "قطعاً. رد شدن در تست آلایندگی یکی از تخصص‌های ماست، از جمله تعمیر کاتالیزور. علت واقعی را پیدا می‌کنیم، قیمت منصفانه می‌دهیم و قبول می‌شوید."
+      }
     },
     {
       "category": "detailing",
-      "question": "What is ceramic coating?",
-      "answer": "Ceramic coating is a protective liquid polymer applied to a vehicle's exterior that helps protect paint from UV exposure, contaminants, oxidation, and minor surface damage while enhancing gloss."
+      "question": {
+        "en": "What is ceramic coating?",
+        "fa": "پوشش سرامیک چیست؟"
+      },
+      "answer": {
+        "en": "Ceramic coating is a protective liquid polymer applied to a vehicle's exterior that helps protect paint from UV exposure, contaminants, oxidation, and minor surface damage while enhancing gloss.",
+        "fa": "پوشش سرامیک یک پلیمر مایع محافظ است که روی بدنهٔ خودرو اعمال می‌شود و به محافظت رنگ در برابر اشعهٔ فرابنفش، آلودگی‌ها، اکسیداسیون و آسیب‌های جزئی سطحی کمک می‌کند و جلا را افزایش می‌دهد."
+      }
     },
     {
       "category": "detailing",
-      "question": "How long does ceramic coating last?",
-      "answer": "Depending on the product and maintenance, ceramic coatings can last several years."
+      "question": {
+        "en": "How long does ceramic coating last?",
+        "fa": "پوشش سرامیک چقدر دوام دارد؟"
+      },
+      "answer": {
+        "en": "Depending on the product and maintenance, ceramic coatings can last several years.",
+        "fa": "بسته به محصول و نگهداری، پوشش‌های سرامیک می‌توانند چندین سال دوام بیاورند."
+      }
     },
     {
       "category": "detailing",
-      "question": "What's included in a full car detailing service?",
-      "answer": "Full detailing may include exterior washing, paint decontamination, waxing or ceramic protection, wheel cleaning, interior vacuuming, leather treatment, stain removal, and trim restoration."
+      "question": {
+        "en": "What's included in a full car detailing service?",
+        "fa": "یک سرویس کامل دیتیلینگ شامل چه چیزهایی است؟"
+      },
+      "answer": {
+        "en": "Full detailing may include exterior washing, paint decontamination, waxing or ceramic protection, wheel cleaning, interior vacuuming, leather treatment, stain removal, and trim restoration.",
+        "fa": "دیتیلینگ کامل می‌تواند شامل شست‌وشوی بیرونی، پاک‌سازی رنگ، واکس یا پوشش سرامیک، تمیزکاری رینگ‌ها، جاروبرقی داخل، تیمار چرم، لکه‌برداری و بازسازی داشبورد و تزئینات باشد."
+      }
     },
     {
       "category": "detailing",
-      "question": "Is detailing worth it in Los Angeles?",
-      "answer": "Yes. Sun exposure, dust, freeway driving, tree sap, and pollution in Los Angeles can wear down paint and interiors quickly. Regular detailing helps preserve appearance and vehicle value."
+      "question": {
+        "en": "Is detailing worth it in Los Angeles?",
+        "fa": "آیا دیتیلینگ در لس‌آنجلس ارزشش را دارد؟"
+      },
+      "answer": {
+        "en": "Yes. Sun exposure, dust, freeway driving, tree sap, and pollution in Los Angeles can wear down paint and interiors quickly. Regular detailing helps preserve appearance and vehicle value.",
+        "fa": "بله. تابش آفتاب، گردوغبار، رانندگی در بزرگراه، شیرهٔ درختان و آلودگی در لس‌آنجلس می‌تواند رنگ و داخل خودرو را به‌سرعت فرسوده کند. دیتیلینگ منظم به حفظ ظاهر و ارزش خودرو کمک می‌کند."
+      }
     },
     {
       "category": "detailing",
-      "question": "Can detailing remove scratches?",
-      "answer": "Light scratches and swirl marks can often be improved or removed through paint correction. Deep scratches may require touch-up or repainting."
+      "question": {
+        "en": "Can detailing remove scratches?",
+        "fa": "آیا دیتیلینگ خط‌وخش را برطرف می‌کند؟"
+      },
+      "answer": {
+        "en": "Light scratches and swirl marks can often be improved or removed through paint correction. Deep scratches may require touch-up or repainting.",
+        "fa": "خط‌وخش‌های سطحی و حلقه‌های ریز را اغلب می‌توان با اصلاح رنگ بهبود داد یا برطرف کرد. خط‌وخش‌های عمیق ممکن است به ترمیم موضعی یا رنگ مجدد نیاز داشته باشند."
+      }
     },
     {
       "category": "trust",
-      "question": "Do you use OEM or aftermarket parts?",
-      "answer": "We can source OEM or high-quality aftermarket parts depending on your vehicle's needs and your preferences."
+      "question": {
+        "en": "Do you use OEM or aftermarket parts?",
+        "fa": "از قطعات اصلی استفاده می‌کنید یا متفرقه؟"
+      },
+      "answer": {
+        "en": "We can source OEM or high-quality aftermarket parts depending on your vehicle's needs and your preferences.",
+        "fa": "بسته به نیاز خودرو و ترجیح شما می‌توانیم قطعات اصلی (OEM) یا قطعات متفرقهٔ باکیفیت تهیه کنیم."
+      }
     },
     {
       "category": "trust",
-      "question": "Can I bring my car in for a second opinion?",
-      "answer": "Yes. Many customers visit us for second opinions on repair recommendations or pricing."
+      "question": {
+        "en": "Can I bring my car in for a second opinion?",
+        "fa": "می‌توانم برای نظر دوم خودرو را بیاورم؟"
+      },
+      "answer": {
+        "en": "Yes. Many customers visit us for second opinions on repair recommendations or pricing.",
+        "fa": "بله. بسیاری از مشتریان برای نظر دوم دربارهٔ توصیه‌های تعمیر یا قیمت‌گذاری به ما مراجعه می‌کنند."
+      }
     },
     {
       "category": "trust",
-      "question": "Do you help maintain older vehicles?",
-      "answer": "Yes. We service both newer and older vehicles, and can help owners maintain high-mileage cars safely and reliably."
+      "question": {
+        "en": "Do you help maintain older vehicles?",
+        "fa": "به نگهداری خودروهای قدیمی هم کمک می‌کنید؟"
+      },
+      "answer": {
+        "en": "Yes. We service both newer and older vehicles, and can help owners maintain high-mileage cars safely and reliably.",
+        "fa": "بله. ما هم خودروهای نو و هم قدیمی را سرویس می‌کنیم و می‌توانیم به مالکان کمک کنیم خودروهای پرکارکرد را ایمن و قابل اعتماد نگه دارند."
+      }
     },
     {
       "category": "trust",
-      "question": "What makes you different from a dealership?",
-      "answer": "As an independent shop, we offer more direct communication, personalized service, faster turnaround, and more flexible repair options than a dealership — backed by 20+ years on Glendale Ave."
+      "question": {
+        "en": "What makes you different from a dealership?",
+        "fa": "چه تفاوتی با نمایندگی دارید؟"
+      },
+      "answer": {
+        "en": "As an independent shop, we offer more direct communication, personalized service, faster turnaround, and more flexible repair options than a dealership — backed by 20+ years on Glendale Ave.",
+        "fa": "به‌عنوان یک تعمیرگاه مستقل، ارتباط مستقیم‌تر، خدمات شخصی‌تر، تحویل سریع‌تر و گزینه‌های منعطف‌تری نسبت به نمایندگی ارائه می‌دهیم — با پشتوانهٔ بیش از ۲۰ سال حضور در خیابان گلندل."
+      }
     },
     {
       "category": "trust",
-      "question": "Will I get a price before work starts?",
-      "answer": "Always. We diagnose the problem, explain it in plain language, and you approve the cost before we begin. No surprises — that's how we've kept customers for over 20 years."
+      "question": {
+        "en": "Will I get a price before work starts?",
+        "fa": "آیا قبل از شروع کار قیمت می‌گیرم؟"
+      },
+      "answer": {
+        "en": "Always. We diagnose the problem, explain it in plain language, and you approve the cost before we begin. No surprises — that's how we've kept customers for over 20 years.",
+        "fa": "همیشه. مشکل را عیب‌یابی می‌کنیم، به زبان ساده توضیح می‌دهیم و شما هزینه را پیش از شروع تأیید می‌کنید. بدون غافلگیری — به همین شکل بیش از ۲۰ سال مشتری‌ها را حفظ کرده‌ایم."
+      }
     }
   ]
 }

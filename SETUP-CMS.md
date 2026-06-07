@@ -11,11 +11,11 @@ Repo: **manoftheworldmedia/allmodelrepair** · Branch: **main** · Host: GitHub 
 | Section | File(s) | What it controls |
 |---|---|---|
 | **Images** | the `/img` folder | Every photo/logo on the site. Upload or swap here. |
-| **Site Content** | `content.json` (EN) · `content.fa.json` (FA) | Hero headline, services, hours, phone, address, about text. |
-| **FAQ** | `faq.json` (EN) · `faq.fa.json` (FA) | The on-page FAQ **and** the Google FAQ rich-result data — one edit updates both. |
+| **Site Content** | `content.json` | Hero, services, hours, phone, address, about — **English & Farsi side by side**. |
+| **FAQ** | `faq.json` | The on-page FAQ **and** the Google FAQ rich-result data — **English & Farsi side by side**, one edit updates both. |
 | **Blog Posts** | `blog/posts/` (EN) · `blog/posts-fa/` (FA) | Add / edit / delete articles. |
 
-Everything exists twice — once for **English** and once for **Farsi (فارسی)** — so you can edit both languages from the CMS.
+Site Content and FAQ use **paired fields**: every text field shows an **English** box and a **Farsi (فارسی)** box together, so you edit both languages in one place and keep translations in sync. Blog posts are kept as two separate lists (one per language).
 
 ---
 
@@ -44,7 +44,7 @@ If you haven't already, upload **all** the files in this package to the repo roo
 2. Authorize Pages CMS for the **manoftheworldmedia/allmodelrepair** repository.
 3. Open the repository inside Pages CMS.
 
-✅ **You should see:** a left sidebar listing **Site Content (English)**, **Site Content (Farsi)**, **FAQ (English)**, **FAQ (Farsi)**, **Blog Posts (English)**, **Blog Posts (Farsi)**, and a **Media** section.
+✅ **You should see:** a left sidebar listing **Site Content**, **FAQ**, **Blog Posts (English)**, **Blog Posts (Farsi)**, and a **Media** section.
 
 ---
 
@@ -63,20 +63,20 @@ If Pages CMS says it can't find a configuration, or the sidebar is empty:
 
 ## STEP 5 — Edit text (hero, services, hours, about)
 
-1. Sidebar → **Site Content (English)**.
-2. Change, for example, the **Hero → Intro paragraph**, or edit **Hours**, then click **Save**.
-3. For Farsi, do the same under **Site Content (Farsi / فارسی)**.
+1. Sidebar → **Site Content**.
+2. Each field has an **English** box and a **Farsi / فارسی** box right next to each other. Edit either (or both), then click **Save**.
+3. The orange word in the headline is the **"Headline — accent"** field.
 
-✅ **You should see:** Pages CMS commits the change; within ~1 minute, reload the live site (hard-refresh: ⌘⇧R / Ctrl⇧R) and your new wording appears. The orange word in the headline is the **"Headline — accent"** field.
+✅ **You should see:** within ~1 minute, reload the live English site (`/`) and the Farsi site (`/fa.html`) — each shows its own language from the same entry (hard-refresh: ⌘⇧R / Ctrl⇧R).
 
 ---
 
 ## STEP 6 — Edit the FAQ
 
-1. Sidebar → **FAQ (English)** → **Questions & Answers**.
-2. Add a new item (pick a **Category**: General / Repairs / Detailing / Trust), type the question and answer, **Save**.
+1. Sidebar → **FAQ** → **Questions & Answers**.
+2. Add a new item (pick a **Category**: General / Repairs / Detailing / Trust), then type the **Question** and **Answer** in both the English and Farsi boxes. **Save**.
 
-✅ **You should see:** on the live site's FAQ section the new question appears under its tab — **and** Google's FAQ structured data updates automatically (both are generated from this one file).
+✅ **You should see:** on each live site the new question appears under its tab in that language — **and** Google's FAQ structured data updates automatically (both are generated from this one file).
 
 ---
 
@@ -106,5 +106,6 @@ If Pages CMS says it can't find a configuration, or the sidebar is empty:
 - **Hours open/closed badge** is calculated automatically from the **Hours** you enter. Keep the format like `8:30 AM – 5:00 PM` (or `Closed`) and it will keep working. Farsi accepts `۸:۳۰ صبح – ۵:۰۰ عصر` / `تعطیل`.
 - **Phone number:** editing **Phone** in Site Content updates the click-to-call links and the two main displayed numbers. (The SMS/text button uses the **Text/SMS number** field.)
 - **Don't rename** `content.json`, `faq.json`, the `img/` folder, or the `blog/posts/` folders — the site looks for those exact names.
+- **Leaving a Farsi box empty** is fine — that field falls back to the English text on the Farsi site.
 - **Design is locked** on purpose — the CMS changes words, images, hours, FAQs, and posts, but not the layout, so it always looks right.
 - After any edit, GitHub Pages takes up to a minute to publish; hard-refresh to see changes immediately.
