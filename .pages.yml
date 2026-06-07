@@ -1,0 +1,180 @@
+media:
+  input: img
+  output: img
+
+content:
+  - name: content_en
+    label: Site Content (English)
+    type: file
+    path: content.json
+    fields:
+      - { name: phone, label: Phone (display), type: string }
+      - { name: smsPhone, label: Text/SMS number, type: string }
+      - name: address
+        label: Address
+        type: object
+        fields:
+          - { name: street, label: Street, type: string }
+          - { name: cityLine, label: City line, type: string }
+          - { name: mapQuery, label: Google Maps search query, type: string }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow (small label), type: string }
+          - { name: headlinePre, label: Headline — before accent, type: string }
+          - { name: headlineAccent, label: Headline — accent (orange) words, type: string }
+          - { name: headlinePost, label: Headline — after accent, type: string }
+          - { name: lead, label: Intro paragraph, type: text }
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [general, brakes, engine, transmission, electrical, smog, ac, body, tuneup, detailing]
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Description, type: text }
+      - name: about
+        label: About
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: lead, label: Lead paragraph, type: text }
+          - { name: body, label: Body paragraph, type: text }
+      - name: hours
+        label: Hours
+        type: object
+        list: true
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: hours, label: Hours (e.g. 8:30 AM – 5:00 PM, or Closed), type: string }
+
+  - name: content_fa
+    label: Site Content (Farsi / فارسی)
+    type: file
+    path: content.fa.json
+    fields:
+      - { name: phone, label: Phone (display), type: string }
+      - { name: smsPhone, label: Text/SMS number, type: string }
+      - name: address
+        label: Address (نشانی)
+        type: object
+        fields:
+          - { name: street, label: Street, type: string }
+          - { name: cityLine, label: City line, type: string }
+          - { name: mapQuery, label: Google Maps search query (keep in English), type: string }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: headlinePre, label: Headline — before accent, type: string }
+          - { name: headlineAccent, label: Headline — accent words, type: string }
+          - { name: headlinePost, label: Headline — after accent, type: string }
+          - { name: lead, label: Intro paragraph, type: text }
+      - name: services
+        label: Services (خدمات)
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [general, brakes, engine, transmission, electrical, smog, ac, body, tuneup, detailing]
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Description, type: text }
+      - name: about
+        label: About (درباره ما)
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: lead, label: Lead paragraph, type: text }
+          - { name: body, label: Body paragraph, type: text }
+      - name: hours
+        label: Hours (ساعات کاری)
+        type: object
+        list: true
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: hours, label: Hours, type: string }
+
+  - name: faq_en
+    label: FAQ (English)
+    type: file
+    path: faq.json
+    fields:
+      - name: items
+        label: Questions & Answers
+        type: object
+        list: true
+        fields:
+          - name: category
+            label: Category
+            type: select
+            options:
+              values: [general, repairs, detailing, trust]
+          - { name: question, label: Question, type: string }
+          - { name: answer, label: Answer, type: text }
+
+  - name: faq_fa
+    label: FAQ (Farsi / فارسی)
+    type: file
+    path: faq.fa.json
+    fields:
+      - name: items
+        label: Questions & Answers
+        type: object
+        list: true
+        fields:
+          - name: category
+            label: Category
+            type: select
+            options:
+              values: [general, repairs, detailing, trust]
+          - { name: question, label: Question, type: string }
+          - { name: answer, label: Answer, type: text }
+
+  - name: posts_en
+    label: Blog Posts (English)
+    type: collection
+    path: blog/posts
+    filename: '{fields.title}.md'
+    exclude: [posts.json]
+    view:
+      fields: [title, date, category]
+      primary: title
+      sort: [date, title]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
+      - { name: description, label: Short description (cards & SEO), type: text }
+      - { name: cover, label: Cover image, type: image }
+      - { name: category, label: Category, type: string }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: body, label: Article body, type: rich-text }
+
+  - name: posts_fa
+    label: Blog Posts (Farsi / فارسی)
+    type: collection
+    path: blog/posts-fa
+    filename: '{fields.title}.md'
+    exclude: [posts.json]
+    view:
+      fields: [title, date, category]
+      primary: title
+      sort: [date, title]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
+      - { name: description, label: Short description, type: text }
+      - { name: cover, label: Cover image, type: image }
+      - { name: category, label: Category, type: string }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: body, label: Article body, type: rich-text }
