@@ -1,0 +1,119 @@
+{
+  "items": [
+    {
+      "category": "general",
+      "question": "Do you work on all makes and models?",
+      "answer": "Yes. All Model Repair services domestic, European, Asian, and luxury vehicles — including BMW, Mercedes-Benz, Audi, Porsche, Lexus, Toyota, Honda, Nissan, Ford, Chevrolet, and more."
+    },
+    {
+      "category": "general",
+      "question": "Where is All Model Repair located?",
+      "answer": "We're in Glendale, California, at 1305 S Glendale Ave #1 — serving Glendale, Atwater Village, Burbank, Eagle Rock, Pasadena, Silver Lake, and greater Los Angeles."
+    },
+    {
+      "category": "general",
+      "question": "Do I need an appointment for auto repair?",
+      "answer": "Appointments are recommended, but walk-ins are welcome depending on shop availability. Calling ahead helps us diagnose issues faster and reduce wait times."
+    },
+    {
+      "category": "general",
+      "question": "How long does a diagnostic take?",
+      "answer": "Most diagnostics begin the same day. Timing depends on the issue, vehicle complexity, and parts availability."
+    },
+    {
+      "category": "general",
+      "question": "Do you provide estimates before work begins?",
+      "answer": "Yes. We provide clear estimates before repairs are performed, so you understand the scope of work and expected costs before we touch a wrench."
+    },
+    {
+      "category": "general",
+      "question": "Need a tow?",
+      "answer": "Can't get to us? We work hand-in-hand with a trusted local towing partner, Hovik Towing, who can bring your vehicle straight to our shop — then we take it from there. Call Hovik Towing at (818) 268-9998."
+    },
+    {
+      "category": "repairs",
+      "question": "Why is my check engine light on?",
+      "answer": "A check engine light can indicate anything from a loose gas cap to engine, ignition, emissions, or sensor-related issues. Diagnostic scanning helps identify the exact cause."
+    },
+    {
+      "category": "repairs",
+      "question": "How often should I change my oil in LA traffic?",
+      "answer": "Most vehicles driving regularly in Glendale and Los Angeles traffic should get oil changes every 5,000–7,500 miles, depending on oil type, driving habits, heat exposure, and manufacturer recommendations."
+    },
+    {
+      "category": "repairs",
+      "question": "Why are my brakes squeaking?",
+      "answer": "Brake squeaking may result from worn brake pads, dust buildup, rotor wear, moisture, or hardware issues. A brake inspection can determine whether replacement is needed."
+    },
+    {
+      "category": "repairs",
+      "question": "What causes a car to overheat in Southern California?",
+      "answer": "Common causes include coolant leaks, radiator problems, failing thermostats, water pump issues, or extreme heat combined with stop-and-go traffic conditions."
+    },
+    {
+      "category": "repairs",
+      "question": "Do you service European cars in Glendale?",
+      "answer": "Yes. We service European vehicles including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, MINI, and Land Rover."
+    },
+    {
+      "category": "repairs",
+      "question": "Do you do smog checks?",
+      "answer": "We handle the diagnosis and repairs that get your vehicle ready to pass California's smog inspection — including check-engine, emissions, and catalytic converter issues. If your car needs a smog repair before certification, that's exactly what we do. Call us at (818) 548-8242 and we'll let you know the fastest way to get you smog-ready."
+    },
+    {
+      "category": "repairs",
+      "question": "My car failed smog — can you help?",
+      "answer": "Absolutely. Failed smog is one of our specialties, including catalytic converter repair. We'll find the real cause, give you a fair price, and get you passing."
+    },
+    {
+      "category": "detailing",
+      "question": "What is ceramic coating?",
+      "answer": "Ceramic coating is a protective liquid polymer applied to a vehicle's exterior that helps protect paint from UV exposure, contaminants, oxidation, and minor surface damage while enhancing gloss."
+    },
+    {
+      "category": "detailing",
+      "question": "How long does ceramic coating last?",
+      "answer": "Depending on the product and maintenance, ceramic coatings can last several years."
+    },
+    {
+      "category": "detailing",
+      "question": "What's included in a full car detailing service?",
+      "answer": "Full detailing may include exterior washing, paint decontamination, waxing or ceramic protection, wheel cleaning, interior vacuuming, leather treatment, stain removal, and trim restoration."
+    },
+    {
+      "category": "detailing",
+      "question": "Is detailing worth it in Los Angeles?",
+      "answer": "Yes. Sun exposure, dust, freeway driving, tree sap, and pollution in Los Angeles can wear down paint and interiors quickly. Regular detailing helps preserve appearance and vehicle value."
+    },
+    {
+      "category": "detailing",
+      "question": "Can detailing remove scratches?",
+      "answer": "Light scratches and swirl marks can often be improved or removed through paint correction. Deep scratches may require touch-up or repainting."
+    },
+    {
+      "category": "trust",
+      "question": "Do you use OEM or aftermarket parts?",
+      "answer": "We can source OEM or high-quality aftermarket parts depending on your vehicle's needs and your preferences."
+    },
+    {
+      "category": "trust",
+      "question": "Can I bring my car in for a second opinion?",
+      "answer": "Yes. Many customers visit us for second opinions on repair recommendations or pricing."
+    },
+    {
+      "category": "trust",
+      "question": "Do you help maintain older vehicles?",
+      "answer": "Yes. We service both newer and older vehicles, and can help owners maintain high-mileage cars safely and reliably."
+    },
+    {
+      "category": "trust",
+      "question": "What makes you different from a dealership?",
+      "answer": "As an independent shop, we offer more direct communication, personalized service, faster turnaround, and more flexible repair options than a dealership — backed by 20+ years on Glendale Ave."
+    },
+    {
+      "category": "trust",
+      "question": "Will I get a price before work starts?",
+      "answer": "Always. We diagnose the problem, explain it in plain language, and you approve the cost before we begin. No surprises — that's how we've kept customers for over 20 years."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "phone": "(818) 548-8242",
+  "smsPhone": "+18186539789",
+  "address": {
+    "street": "1305 S Glendale Ave, Ste 1",
+    "cityLine": "Glendale, CA 91205",
+    "mapQuery": "1305 S Glendale Ave Glendale CA 91205"
+  },
+  "hero": {
+    "eyebrow": "THE MOST TRUSTED MECHANICS IN GLENDALE",
+    "headlinePre": "Trusted Auto Repair For ",
+    "headlineAccent": "Every Make",
+    "headlinePost": " & Every Model",
+    "lead": "From brakes to engines, electrical to smog, Jano and the team have kept Glendale on the road for over 20 years. Straight answers, honest prices, work done right the first time. Make an appointment or drop in, we're waiting."
+  },
+  "services": [
+    { "icon": "general", "title": "General Repair", "text": "Whatever's wrong, we diagnose it straight and fix it right — no upsell, no guesswork." },
+    { "icon": "brakes", "title": "Brakes", "text": "Pads, rotors, lines and full inspections so you stop safe and quiet, every time." },
+    { "icon": "engine", "title": "Engine Repair & Rebuild", "text": "From check-engine lights to full rebuilds — decades of hands-on engine experience." },
+    { "icon": "transmission", "title": "Transmission", "text": "Fluid service, repairs and replacements for smooth, reliable shifting." },
+    { "icon": "electrical", "title": "Electrical Diagnostics", "text": "Batteries, alternators, sensors and wiring gremlins — found fast and fixed." },
+    { "icon": "smog", "title": "Catalytic & Smog", "text": "Failed your smog check? We'll get the right fix at a fair price and back on the road." },
+    { "icon": "ac", "title": "A/C & Heating", "text": "Recharges, leaks and climate repairs to keep you comfortable in any season." },
+    { "icon": "body", "title": "Body & Dent Repair", "text": "Dings, dents and bumper work — cosmetic fixes handled in-house." },
+    { "icon": "tuneup", "title": "Tune-Ups & Maintenance", "text": "Oil, fluids, filters and factory-schedule service to prevent the big bills." }
+  ],
+  "about": {
+    "eyebrow": "Our Story",
+    "heading": "THE SHOP THAT'S EARNED ITS REPUTATION",
+    "lead": "All Model Repair is a neighborhood shop that has served South Glendale Avenue for over 20 years — long enough that we fix the cars of customers we first met years ago, and now their kids' cars too.",
+    "body": "It started simple and it stays simple: tell people the truth, charge a fair price, and do the job right. That's why neighbors keep sending neighbors. One reviewer put it best — \"the most honest mechanic I have ever met.\" We'd like to earn that from you, too."
+  },
+  "hours": [
+    { "day": "Monday", "hours": "8:30 AM – 5:00 PM" },
+    { "day": "Tuesday", "hours": "8:30 AM – 5:00 PM" },
+    { "day": "Wednesday", "hours": "8:30 AM – 5:00 PM" },
+    { "day": "Thursday", "hours": "8:30 AM – 5:00 PM" },
+    { "day": "Friday", "hours": "8:30 AM – 5:00 PM" },
+    { "day": "Saturday", "hours": "8:30 AM – 12:00 PM" },
+    { "day": "Sunday", "hours": "Closed" }
+  ]
+}

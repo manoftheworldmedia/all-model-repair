@@ -1099,6 +1099,25 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 .fp-body h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 3.4vw, 42px); line-height: 1.08; margin: 12px 0 0; color: var(--text); }
 .fp-body p { color: var(--text-soft); margin: 16px 0 24px; font-size: 17px; line-height: 1.6; }
 
+/* ---------- Blog: dynamic images, loading, single post ---------- */
+.fp-media img, .post-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.blog-loading { color: var(--muted); font-size: 17px; text-align: center; padding: 40px 0; }
+.post-article { max-width: 760px; margin-inline: auto; }
+.post-back { display: inline-block; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .08em; font-size: 14px; color: var(--accent); margin-bottom: 18px; }
+.post-article h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.06; margin: 6px 0 0; color: var(--text); }
+.post-lede { font-size: clamp(18px, 1.6vw, 21px); color: var(--text-soft); line-height: 1.55; margin: 18px 0 0; }
+.post-cover { margin: 28px 0 8px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); aspect-ratio: 16 / 9; }
+.post-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-content { font-size: 18px; line-height: 1.7; color: var(--text-soft); }
+.post-content h2 { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .01em; font-size: clamp(22px, 2.6vw, 30px); color: var(--text); margin: 38px 0 12px; }
+.post-content h3 { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 28px 0 10px; }
+.post-content p { margin: 0 0 18px; }
+.post-content ul, .post-content ol { margin: 0 0 18px; padding-inline-start: 22px; }
+.post-content li { margin-bottom: 8px; }
+.post-content a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.post-content strong { color: var(--text); }
+.post-content blockquote { margin: 0 0 18px; padding-inline-start: 18px; border-inline-start: 3px solid var(--accent); color: var(--text); font-style: italic; }
+
 /* ---------- Neighborhood promise band ---------- */
 .promise {
   position: relative;
