@@ -34,7 +34,7 @@ If you haven't already, upload **all** the files in this package to the repo roo
 1. Repo → **Settings** → **Pages**.
 2. Under **Build and deployment**: Source = **Deploy from a branch**, Branch = **main** / **/ (root)** → **Save**.
 
-✅ **You should see:** after ~1 minute, your site live at `https://www.allmodelrepair.com/` (or `https://manoftheworldmedia.github.io/allmodelrepair/`).
+✅ **You should see:** after ~1 minute, your site live at `https://allmodelrepair.com/`.
 
 ---
 
