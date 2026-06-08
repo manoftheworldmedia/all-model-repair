@@ -58,14 +58,22 @@
   }
 
   function loadAll(c) {
+    function parse(data) {
+      var arr = Array.isArray(data) ? data : (data && data.posts) || [];
+      return arr.filter(function (p) { return p && p.slug; }).sort(function (a, b) {
+        return new Date(b.date || 0) - new Date(a.date || 0);
+      });
+    }
+    // try cache-busted first (best for GitHub Pages); if that fails
+    // (e.g. a host that blocks query strings), retry the plain URL.
     return fetch(c.file + "?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("posts " + r.status); return r.json(); })
-      .then(function (data) {
-        var arr = Array.isArray(data) ? data : (data && data.posts) || [];
-        return arr.filter(function (p) { return p && p.slug; }).sort(function (a, b) {
-          return new Date(b.date || 0) - new Date(a.date || 0);
+      .catch(function () {
+        return fetch(c.file, { cache: "no-cache" }).then(function (r) {
+          if (!r.ok) throw new Error("posts " + r.status); return r.json();
         });
-      });
+      })
+      .then(parse);
   }
 
   function postHref(c, slug) {
@@ -160,6 +168,7 @@
   function renderPreview(el) {
     var c = cfg(el), t = T[c.lang];
     var limit = parseInt(el.getAttribute("data-limit") || "3", 10);
+    el.className = "blog-grid";
     el.innerHTML = '<p class="blog-loading">' + t.loading + "</p>";
     loadAll(c).then(function (posts) {
       if (!posts.length) { el.innerHTML = ""; return; }
