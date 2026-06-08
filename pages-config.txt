@@ -157,40 +157,40 @@ content:
               - { name: en, label: English, type: text }
               - { name: fa, label: Farsi / فارسی, type: text }
 
-  - name: posts_en
-    label: Blog Posts (English)
-    type: collection
-    path: blog/posts
-    filename: '{fields.title}.md'
-    exclude: [posts.json]
-    view:
-      fields: [title, date, category]
-      primary: title
-      sort: [date, title]
+  - name: blog
+    label: Blog Posts
+    type: file
+    path: blog/posts.json
     fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
-      - { name: description, label: Short description (cards & SEO), type: text }
-      - { name: cover, label: Cover image, type: image }
-      - { name: category, label: Category, type: string }
-      - { name: tags, label: Tags, type: string, list: true }
-      - { name: body, label: Article body, type: rich-text }
-
-  - name: posts_fa
-    label: Blog Posts (Farsi / فارسی)
-    type: collection
-    path: blog/posts-fa
-    filename: '{fields.title}.md'
-    exclude: [posts.json]
-    view:
-      fields: [title, date, category]
-      primary: title
-      sort: [date, title]
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
-      - { name: description, label: Short description, type: text }
-      - { name: cover, label: Cover image, type: image }
-      - { name: category, label: Category, type: string }
-      - { name: tags, label: Tags, type: string, list: true }
-      - { name: body, label: Article body, type: rich-text }
+      - name: posts
+        label: Posts
+        type: object
+        list: true
+        fields:
+          - { name: slug, label: "URL slug (lowercase-with-dashes, no spaces)", type: string, pattern: "^[a-z0-9-]+$" }
+          - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
+          - { name: cover, label: Cover image, type: image }
+          - name: category
+            label: Category
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fa, label: Farsi / فارسی, type: string }
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fa, label: Farsi / فارسی, type: string }
+          - name: description
+            label: Short description (cards & SEO)
+            type: object
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: fa, label: Farsi / فارسی, type: text }
+          - name: body
+            label: Article body
+            type: object
+            fields:
+              - { name: en, label: English, type: rich-text }
+              - { name: fa, label: Farsi / فارسی, type: rich-text }

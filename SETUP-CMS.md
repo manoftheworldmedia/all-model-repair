@@ -13,9 +13,9 @@ Repo: **manoftheworldmedia/allmodelrepair** · Branch: **main** · Host: GitHub 
 | **Images** | the `/img` folder | Every photo/logo on the site. Upload or swap here. |
 | **Site Content** | `content.json` | Hero, services, hours, phone, address, about — **English & Farsi side by side**. |
 | **FAQ** | `faq.json` | The on-page FAQ **and** the Google FAQ rich-result data — **English & Farsi side by side**, one edit updates both. |
-| **Blog Posts** | `blog/posts/` (EN) · `blog/posts-fa/` (FA) | Add / edit / delete articles. |
+| **Blog Posts** | `blog/posts.json` | Add / edit / delete articles — **English & Farsi side by side**, one list. |
 
-Site Content and FAQ use **paired fields**: every text field shows an **English** box and a **Farsi (فارسی)** box together, so you edit both languages in one place and keep translations in sync. Blog posts are kept as two separate lists (one per language).
+Site Content, FAQ, and Blog all use **paired fields**: every text field shows an **English** box and a **Farsi (فارسی)** box together, so you edit both languages in one place and keep translations in sync.Blog posts are kept as two separate lists (one per language).
 
 ---
 
@@ -23,7 +23,7 @@ Site Content and FAQ use **paired fields**: every text field shows an **English*
 
 If you haven't already, upload **all** the files in this package to the repo root (so `index.html` sits at the top level, not inside a folder), and commit.
 
-✅ **You should see:** in the repo's file list, `index.html`, `styles.css`, `cms.js`, `blog.js`, `content.json`, `faq.json`, `.pages.yml`, and the `img/` and `blog/` folders — all at the top level.
+✅ **You should see:** in the repo's file list, `index.html`, `styles.css`, `cms.js`, `blog.js`, `content.json`, `faq.json`, `.pages.yml`, and the `img/` and `blog/` folders — all at the top level. (`blog/` contains `posts.json`.)
 
 > ⚠️ **Mac users:** `.pages.yml` starts with a dot, so Finder hides it. If it's missing from the repo, don't worry — Step 4 has you paste it in directly.
 
@@ -44,7 +44,7 @@ If you haven't already, upload **all** the files in this package to the repo roo
 2. Authorize Pages CMS for the **manoftheworldmedia/allmodelrepair** repository.
 3. Open the repository inside Pages CMS.
 
-✅ **You should see:** a left sidebar listing **Site Content**, **FAQ**, **Blog Posts (English)**, **Blog Posts (Farsi)**, and a **Media** section.
+✅ **You should see:** a left sidebar listing **Site Content**, **FAQ**, **Blog Posts**, and a **Media** section.
 
 ---
 
@@ -82,12 +82,16 @@ If Pages CMS says it can't find a configuration, or the sidebar is empty:
 
 ## STEP 7 — Add a blog post
 
-1. Sidebar → **Blog Posts (English)** → **Add an entry**.
-2. Fill in **Title, Date, Short description, Cover image** (pick/upload from Media), **Category, Tags**, and write the **Article body**. **Save**.
+1. Sidebar → **Blog Posts** → **Posts** → **Add an entry**.
+2. Fill in:
+   - **URL slug** — lowercase-with-dashes, no spaces (e.g. `winter-tire-tips`). This becomes the page address.
+   - **Date**, **Cover image** (pick/upload from Media), **Category**.
+   - **Title**, **Short description**, and **Article body** — each has an **English** and a **Farsi** box.
+3. **Save**.
 
-✅ **You should see:** the post appears on `blog.html` automatically (newest first) with its own page at `post.html?slug=…`. Farsi posts work the same way under **Blog Posts (Farsi)** and appear on `blog-fa.html`.
+✅ **You should see:** the post appears on `blog.html` automatically (newest first) with its own page at `post.html?slug=your-slug`. The Farsi site `blog-fa.html` shows the same post in Farsi. Leave a Farsi box empty and that post falls back to English on the Farsi site.
 
-> New posts appear on their own — the blog reads the live list of files from GitHub, so there's nothing to rebuild.
+> Everything lives in one file (`blog/posts.json`), so there's nothing to rebuild and no folder of files to manage.
 
 ---
 
@@ -105,7 +109,7 @@ If Pages CMS says it can't find a configuration, or the sidebar is empty:
 
 - **Hours open/closed badge** is calculated automatically from the **Hours** you enter. Keep the format like `8:30 AM – 5:00 PM` (or `Closed`) and it will keep working. Farsi accepts `۸:۳۰ صبح – ۵:۰۰ عصر` / `تعطیل`.
 - **Phone number:** editing **Phone** in Site Content updates the click-to-call links and the two main displayed numbers. (The SMS/text button uses the **Text/SMS number** field.)
-- **Don't rename** `content.json`, `faq.json`, the `img/` folder, or the `blog/posts/` folders — the site looks for those exact names.
+- **Don't rename** `content.json`, `faq.json`, `blog/posts.json`, or the `img/` folder — the site looks for those exact names.
 - **Leaving a Farsi box empty** is fine — that field falls back to the English text on the Farsi site.
 - **Design is locked** on purpose — the CMS changes words, images, hours, FAQs, and posts, but not the layout, so it always looks right.
 - After any edit, GitHub Pages takes up to a minute to publish; hard-refresh to see changes immediately.
