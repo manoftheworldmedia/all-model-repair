@@ -1,14 +1,14 @@
 ---
-title: "Why Is My Check Engine Light On? A Glendale Mechanic Explains"
-date: "2026-01-22"
-description: "The most common reasons that light comes on, which ones you can drive with for now, and which mean 'head to a shop today.'"
-cover: "img/work-lineup.jpg"
-category: "Diagnostics"
+title: Why Is My Check Engine Light On? A Glendale Mechanic Explains
+date: 2026-01-22
+description: The most common reasons that light comes on, which ones you can
+  drive with for now, and which mean 'head to a shop today.'
+cover: img/work-lineup.jpg
+category: Diagnostics
 tags:
   - check engine light
   - diagnostics
 ---
-
 Few dashboard lights cause more anxiety than the check engine light. The good news: it's often something minor. The important part is knowing the difference.
 
 ## Common causes, from minor to serious
