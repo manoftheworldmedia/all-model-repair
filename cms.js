@@ -67,7 +67,9 @@
   }
 
   function getJSON(url) {
-    return fetch(url, { cache: "no-cache" }).then(function (r) {
+    // cache-bust so edits show up immediately (GitHub Pages CDN can hold a stale copy)
+    var bust = (url.indexOf("?") === -1 ? "?" : "&") + "t=" + Date.now();
+    return fetch(url + bust, { cache: "no-store" }).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status + " for " + url);
       return r.json();
     });

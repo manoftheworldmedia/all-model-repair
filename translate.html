@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Translation Helper — All Model Repair</title>
+<link rel="icon" href="favicon.ico?v=2" sizes="any" />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Saira:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root { --orange:#F2922E; --carbon:#0C0D10; --slate:#15181E; --border:rgba(255,255,255,.12); --text:#F3F4F6; --muted:#888F9B; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--carbon); color:var(--text); font-family:"Barlow",system-ui,sans-serif; line-height:1.6; padding:clamp(20px,4vw,48px); }
+  .wrap { max-width: 760px; margin-inline:auto; }
+  h1 { font-family:"Saira",sans-serif; text-transform:uppercase; font-size:clamp(26px,4vw,38px); margin:0 0 4px; }
+  h1 .o { color:var(--orange); }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  .card { background:var(--slate); border:1px solid var(--border); border-radius:10px; padding:22px 24px; margin-bottom:18px; }
+  .card h2 { font-family:"Saira",sans-serif; text-transform:uppercase; font-size:15px; letter-spacing:.08em; color:var(--orange); margin:0 0 14px; }
+  label { display:block; font-size:14px; color:var(--muted); margin-bottom:6px; }
+  input[type=email] { width:100%; background:var(--carbon); border:1px solid var(--border); border-radius:6px; color:var(--text); padding:10px 12px; font-family:inherit; font-size:15px; }
+  .modes { display:flex; gap:18px; margin:14px 0 2px; flex-wrap:wrap; }
+  .modes label { display:flex; align-items:center; gap:8px; color:var(--text); margin:0; cursor:pointer; font-size:15px; }
+  .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
+  button { font-family:"Saira",sans-serif; text-transform:uppercase; letter-spacing:.05em; font-weight:600; font-size:15px; padding:13px 22px; border-radius:6px; border:1px solid transparent; cursor:pointer; transition:transform .12s ease, background .2s ease; }
+  button:hover { transform:translateY(-1px); }
+  .primary { background:var(--orange); color:#1C1D20; }
+  .ghost { background:transparent; color:var(--text); border-color:var(--border); }
+  #status { font-size:15px; color:var(--text); margin:6px 0 0; min-height:22px; }
+  #log { background:var(--carbon); border:1px solid var(--border); border-radius:6px; padding:14px; font-family:ui-monospace,Menlo,monospace; font-size:12.5px; color:var(--muted); white-space:pre-wrap; max-height:280px; overflow:auto; margin-top:14px; }
+  #downloads { display:none; gap:12px; flex-wrap:wrap; margin-top:14px; }
+  ol { color:var(--muted); font-size:14.5px; padding-left:20px; } ol li { margin-bottom:8px; }
+  ol b { color:var(--text); }
+  a { color:var(--orange); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Translation <span class="o">Helper</span></h1>
+  <p class="sub">Auto-fill the English ↔ Farsi pairs in <b>content.json</b> and <b>faq.json</b>, then download and commit them.</p>
+
+  <div class="card">
+    <h2>1 · Translate</h2>
+    <label for="email">Your email (optional — raises the free daily limit)</label>
+    <input id="email" type="email" placeholder="you@example.com" />
+    <div class="modes">
+      <label><input type="radio" name="mode" value="empty" checked /> Only fill empty fields</label>
+      <label><input type="radio" name="mode" value="all" /> Overwrite all (re-translate everything)</label>
+    </div>
+    <div class="btns">
+      <button class="primary" id="btn-en2fa">English → Farsi</button>
+      <button class="primary" id="btn-fa2en">Farsi → English</button>
+    </div>
+    <p id="status">Loading…</p>
+    <pre id="log"></pre>
+    <div id="downloads">
+      <button class="ghost" id="dl-content">⬇ Download content.json</button>
+      <button class="ghost" id="dl-faq">⬇ Download faq.json</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2 · Publish your translations</h2>
+    <ol>
+      <li>Click the <b>Download</b> buttons above to get the updated <b>content.json</b> and <b>faq.json</b>.</li>
+      <li><b>Review them</b> — machine translation is a great starting point but isn't perfect, especially for names and slang.</li>
+      <li>Upload the files to your GitHub repo (replace the existing ones) and commit — or paste their contents into Pages CMS's file view. The live site updates within ~1 minute.</li>
+    </ol>
+    <p class="sub" style="margin:6px 0 0;">Tip: leaving a Farsi field empty also works — the Farsi site automatically shows the English text as a fallback. This tool is for when you want real translated Farsi instead.</p>
+  </div>
+</div>
+<script src="translate.js"></script>
+</body>
+</html>

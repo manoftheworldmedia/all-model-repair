@@ -74,7 +74,7 @@
       })
       .catch(function () {
         // fallback: manifest committed alongside posts
-        return fetch(c.dir + "/posts.json", { cache: "no-cache" })
+        return fetch(c.dir + "/posts.json?t=" + Date.now(), { cache: "no-store" })
           .then(function (r) { if (!r.ok) throw new Error("manifest " + r.status); return r.json(); })
           .then(function (arr) { return (arr || []).map(function (n) { return /\.md$/i.test(n) ? n : n + ".md"; }); })
           .catch(function () { return []; });
@@ -82,7 +82,7 @@
   }
 
   function fetchPost(c, file) {
-    return fetch(c.dir + "/" + file, { cache: "no-cache" }).then(function (r) {
+    return fetch(c.dir + "/" + file + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
       if (!r.ok) throw new Error("post " + r.status);
       return r.text();
     }).then(function (raw) {
