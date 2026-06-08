@@ -6,20 +6,21 @@
       "cover": "img/work-corvette-brakes.jpg",
       "category": {
         "en": "Repair Costs",
-        "fa": "هزینه تعمیرات"
+        "fa": ""
       },
       "title": {
         "en": "How Much Does a Brake Job Cost in Glendale? (2026 Honest Pricing Guide)",
-        "fa": "هزینه تعمیر ترمز در گلندیل چقدر است؟ (راهنمای صادقانه قیمت‌ها در سال ۲۰۲۶)"
+        "fa": ""
       },
       "description": {
         "en": "Brake quotes around Los Angeles swing wildly. Here's what pads, rotors, and labor should actually cost in Glendale — and the noises that mean you shouldn't wait.",
-        "fa": "هزینه تعمیر ترمز در لس‌آنجلس می‌تواند تفاوت زیادی داشته باشد. در اینجا توضیح می‌دهیم که هزینه لنت، دیسک و دستمزد تعمیر در گلندیل واقعاً باید چقدر باشد و چه صداهایی نشان می‌دهند که نباید بیشتر منتظر بمانید.\n"
+        "fa": ""
       },
       "body": {
         "en": "Brake quotes around Los Angeles can swing by hundreds of dollars for the exact same work. Here's a straight, no-upsell breakdown of what a brake job really costs in Glendale in 2026 — and how to know when it's time.\n\n## What you're actually paying for\n\nA \"brake job\" isn't one thing. Depending on your car and how long you've waited, it can include:\n\n- **Brake pads** — the wear item you replace most often.\n- **Rotors** — resurfaced or replaced when they're worn or warped.\n- **Calipers, hardware, and brake fluid** — replaced as needed.\n- **Labor** — the biggest variable between shops.\n\n## Typical Glendale pricing\n\nFor most everyday vehicles, front pads and rotors done right usually land in a fair mid-range — less than the dealership, and without the surprise add-ons. European and performance cars cost more because the parts cost more, not because we mark them up.\n\n## The noises you shouldn't ignore\n\n- A high-pitched **squeal** when you brake.\n- A deeper **grinding** sound (this usually means metal-on-metal — don't wait).\n- A **pulsing** pedal under your foot.\n\nIf you're hearing any of these, [bring it in](index.html#contact) or call **(818) 548-8242**. We'll inspect it, tell you exactly what it needs, and quote you before any work begins.",
-        "fa": "هزینه تعمیر ترمز در لس‌آنجلس می‌تواند برای دقیقاً همان کار، صدها دلار تفاوت داشته باشد. در ادامه، بدون فروش اضافی و بدون پیچاندن موضوع، توضیح می‌دهیم تعمیر ترمز در گلندیل در سال ۲۰۲۶ واقعاً چقدر هزینه دارد و از کجا بفهمید زمان تعمیر فرا رسیده است.\n\n## واقعاً برای چه چیزی هزینه پرداخت می‌کنید؟\n\n«تعمیر ترمز» فقط یک خدمت مشخص نیست. بسته به نوع خودرو و مدت زمانی که از رسیدگی به آن گذشته، ممکن است شامل موارد زیر باشد:\n\n- **لنت ترمز** — قطعه‌ای که بیشتر از همه نیاز به تعویض دارد.\n- **دیسک ترمز (روتور)** — در صورت ساییدگی یا تاب برداشتن، تراش داده می‌شود یا تعویض می‌گردد.\n- **کالیپرها، قطعات جانبی و روغن ترمز** — در صورت نیاز تعویض می‌شوند.\n- **دستمزد تعمیرکار** — بزرگ‌ترین عامل تفاوت قیمت بین تعمیرگاه‌ها.\n\n## هزینه معمول تعمیر ترمز در گلندیل\n\nبرای بیشتر خودروهای روزمره، تعویض صحیح لنت و دیسک‌های جلو معمولاً در محدوده‌ای منصفانه قرار می‌گیرد؛ کمتر از نمایندگی‌ها و بدون هزینه‌های غیرمنتظره و اضافی.\n\nخودروهای اروپایی و مدل‌های عملکردی (Performance) معمولاً هزینه بیشتری دارند، زیرا قیمت قطعات آن‌ها بالاتر است، نه به این دلیل که ما روی قطعات سود بیشتری می‌کشیم.\n\n## صداهایی که نباید نادیده بگیرید\n\n- صدای **جیغ یا سوت تیز** هنگام ترمز گرفتن\n- صدای **ساییدگی یا خراش عمیق** (معمولاً نشان‌دهنده تماس فلز با فلز است؛ منتظر نمانید)\n- **لرزش یا ضربان** در پدال ترمز هنگام فشردن آن\n\nاگر هر یک از این علائم را مشاهده می‌کنید، خودرو را برای بازدید بیاورید یا با شماره **(818) 548-8242** تماس بگیرید.\n\nما سیستم ترمز را بررسی می‌کنیم، دقیقاً توضیح می‌دهیم چه چیزی نیاز به تعمیر دارد و پیش از شروع هر کاری، هزینه را به‌صورت شفاف اعلام می‌کنیم."
-      }
+        "fa": ""
+      },
+      "home": true
     },
     {
       "slug": "check-engine-light-glendale",
@@ -40,7 +41,8 @@
       "body": {
         "en": "Few dashboard lights cause more anxiety than the check engine light. The good news: it's often something minor. The important part is knowing the difference.\n\n## Common causes, from minor to serious\n\n1. **A loose or failing gas cap** — surprisingly common, and cheap to fix.\n2. **Oxygen or mass-airflow sensors** — affect fuel economy and emissions.\n3. **Spark plugs or ignition coils** — can cause a rough idle or misfire.\n4. **Catalytic converter** — more serious, and often emissions-related.\n\n## Solid light vs. flashing light\n\n- A **steady** light means \"get it checked soon.\" You can usually keep driving carefully.\n- A **flashing** light means \"stop driving and get help now\" — it often signals a misfire that can damage your catalytic converter.\n\n## What we do\n\nWe start with a diagnostic scan to read the trouble codes, then confirm the real cause before recommending anything. No guessing, no parts-cannon. Call **(818) 548-8242** and we'll tell you the fastest way to get it sorted.",
         "fa": "کمتر چراغی روی داشبورد به‌اندازهٔ چراغ چک موتور نگران‌کننده است. خبر خوب این است که اغلب مشکل کوچکی است؛ مهم این است که تفاوت‌ها را بشناسید.\n\n## دلایل رایج، از کم‌اهمیت تا جدی\n\n1. **درپوش شل یا خراب باک بنزین** — رایج و ارزان.\n2. **سنسورهای اکسیژن یا هوا** — روی مصرف سوخت و آلایندگی اثر می‌گذارند.\n3. **شمع یا کویل جرقه** — می‌تواند باعث لرزش یا تک‌سوزی شود.\n4. **کاتالیزور** — جدی‌تر و معمولاً مربوط به آلایندگی.\n\n## چراغ ثابت در برابر چراغ چشمک‌زن\n\n- چراغ **ثابت** یعنی «به‌زودی بررسی شود». معمولاً می‌توانید با احتیاط رانندگی کنید.\n- چراغ **چشمک‌زن** یعنی «همین حالا متوقف شوید» — اغلب نشانهٔ تک‌سوزی است که می‌تواند به کاتالیزور آسیب بزند.\n\n## ما چه می‌کنیم\n\nبا اسکن عیب‌یابی کدهای خطا را می‌خوانیم و پیش از هر توصیه‌ای علت واقعی را تأیید می‌کنیم. با شمارهٔ **(818) 548-8242** تماس بگیرید."
-      }
+      },
+      "home": true
     },
     {
       "slug": "failed-smog-check-glendale",
@@ -48,20 +50,21 @@
       "cover": "img/work-porsche-ac.jpg",
       "category": {
         "en": "Smog & Emissions",
-        "fa": "اسموگ و آلایندگی خودرو"
+        "fa": ""
       },
       "title": {
         "en": "Failed Your Smog Check in Glendale? Here's Exactly What to Do Next",
-        "fa": "تست اسموگ خودروی شما در گلندیل قبول نشد؟ در ادامه دقیقاً توضیح می‌دهیم چه باید بکنید."
+        "fa": ""
       },
       "description": {
         "en": "A step-by-step plan to pass — common failure causes, catalytic converter repair, and how we get Glendale drivers smog-ready.",
-        "fa": "برنامه‌ای مرحله‌به‌مرحله برای قبولی در تست اسموگ — دلایل رایج مردودی، تعمیر مبدل کاتالیستی، و اینکه چطور رانندگان گلندیل را برای تست اسموگ آماده می‌کنیم.\n"
+        "fa": ""
       },
       "body": {
         "en": "Failing a smog check is frustrating, but it's fixable — and it's one of the things we handle most. Here's the plan.\n\n## Step 1: Don't panic, get the report\n\nYour smog station gives you a report showing **why** the vehicle failed. That report tells us exactly where to start.\n\n## Step 2: Find the real cause\n\nCommon smog failures come from:\n\n- A check engine light (an automatic fail in California)\n- Worn oxygen sensors\n- A failing catalytic converter\n- Evaporative (EVAP) system leaks\n\n## Step 3: Repair, then retest\n\nWe diagnose the actual cause, give you a fair price up front, and make the repair. Then you retest. We don't replace parts you don't need just to \"throw something at it.\"\n\nBring us your failure report and we'll map out the shortest path to passing. Call **(818) 548-8242** or [request an appointment](index.html#contact).",
-        "fa": "رد شدن در تست اسموگ (Smog Check) می‌تواند آزاردهنده باشد، اما قابل رفع است — و یکی از رایج‌ترین خدماتی است که ما انجام می‌دهیم. این برنامه کاری ماست.\n\n## مرحله ۱: نگران نشوید، گزارش را دریافت کنید\n\nمرکز تست اسموگ به شما گزارشی می‌دهد که مشخص می‌کند **چرا** خودرو مردود شده است. این گزارش دقیقاً به ما نشان می‌دهد از کجا باید شروع کنیم.\n\n## مرحله ۲: علت اصلی را پیدا کنید\n\nرایج‌ترین دلایل رد شدن در تست اسموگ عبارت‌اند از:\n\n- روشن بودن چراغ چک موتور (در کالیفرنیا به‌طور خودکار باعث مردودی می‌شود)\n- فرسودگی یا خرابی سنسورهای اکسیژن\n- خرابی مبدل کاتالیستی (Catalytic Converter)\n- نشتی در سیستم تبخیر سوخت (EVAP)\n\n## مرحله ۳: تعمیر و سپس تست مجدد\n\nما علت واقعی مشکل را تشخیص می‌دهیم، هزینه را از ابتدا به‌صورت شفاف اعلام می‌کنیم و تعمیرات لازم را انجام می‌دهیم. سپس می‌توانید برای تست مجدد اقدام کنید.\n\nما قطعاتی را که نیازی به تعویض ندارند صرفاً برای «امتحان کردن» عوض نمی‌کنیم.\n\nگزارش مردودی تست اسموگ خود را برای ما بیاورید تا کوتاه‌ترین مسیر برای قبولی خودرو را مشخص کنیم.\n\nبا شماره **(818) 548-8242** تماس بگیرید یا برای تعیین وقت مراجعه درخواست ثبت کنید."
-      }
+        "fa": ""
+      },
+      "home": true
     }
   ]
 }

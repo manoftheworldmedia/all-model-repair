@@ -744,44 +744,7 @@ BETTER THAN EVER</h2>
       </div>
       <a class="btn btn-ghost" href="blog.html">All Articles</a>
     </div>
-    <div class="blog-grid">
-      <article class="post reveal">
-        <a class="post-media" href="post.html?slug=brake-job-cost-glendale">
-          <img src="img/work-corvette-brakes.jpg?v=3" alt="Chevrolet Corvette brake job at All Model Repair" loading="lazy" />
-          <span class="post-cat">Repair Costs</span>
-        </a>
-        <div class="post-body">
-          <div class="post-meta">Feb 2026 · 6 min read</div>
-          <h3><a href="post.html?slug=brake-job-cost-glendale">How Much Does a Brake Job Cost in Glendale? (2026 Honest Pricing Guide)</a></h3>
-          <p>What you should actually pay for pads, rotors, and labor in the Glendale area — and the warning signs you shouldn't wait on.</p>
-          <a class="post-link" href="post.html?slug=brake-job-cost-glendale">Read article →</a>
-        </div>
-      </article>
-      <article class="post reveal">
-        <a class="post-media" href="post.html?slug=check-engine-light-glendale">
-          <img src="img/work-lineup.jpg?v=3" alt="Check engine light diagnostics at All Model Repair" loading="lazy" />
-          <span class="post-cat">Diagnostics</span>
-        </a>
-        <div class="post-body">
-          <div class="post-meta">Jan 2026 · 5 min read</div>
-          <h3><a href="post.html?slug=check-engine-light-glendale">Why Is My Check Engine Light On? A Glendale Mechanic Explains</a></h3>
-          <p>The 7 most common reasons that light comes on, which ones you can ignore for now, and which mean "drive straight to a shop."</p>
-          <a class="post-link" href="post.html?slug=check-engine-light-glendale">Read article →</a>
-        </div>
-      </article>
-      <article class="post reveal">
-        <a class="post-media" href="post.html?slug=failed-smog-check-glendale">
-          <img src="img/work-porsche-ac.jpg?v=3" alt="Smog check repair at All Model Repair" loading="lazy" />
-          <span class="post-cat">Smog &amp; Emissions</span>
-        </a>
-        <div class="post-body">
-          <div class="post-meta">Jan 2026 · 4 min read</div>
-          <h3><a href="post.html?slug=failed-smog-check-glendale">Failed Your Smog Check in Glendale? Here's Exactly What to Do Next</a></h3>
-          <p>A step-by-step plan to pass — from common failure causes to catalytic converter repair and California's repair assistance options.</p>
-          <a class="post-link" href="post.html?slug=failed-smog-check-glendale">Read article →</a>
-        </div>
-      </article>
-    </div>
+    <div id="blog-home" data-posts-file="blog/posts.json" data-lang="en" data-limit="3"></div>
   </div>
 </section>
 
@@ -978,6 +941,8 @@ BACK ON THE ROAD</h2>
 </script>
 
 <script src="cms.js?v=3"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="blog.js?v=5"></script>
 
 <!-- Tweaks panel (React island) -->
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>

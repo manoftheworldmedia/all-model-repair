@@ -156,10 +156,36 @@
     });
   }
 
+  /* ---------- HOME PREVIEW (posts flagged for home, else latest N) ---------- */
+  function renderPreview(el) {
+    var c = cfg(el), t = T[c.lang];
+    var limit = parseInt(el.getAttribute("data-limit") || "3", 10);
+    el.innerHTML = '<p class="blog-loading">' + t.loading + "</p>";
+    loadAll(c).then(function (posts) {
+      if (!posts.length) { el.innerHTML = ""; return; }
+      // prefer posts the owner flagged "show on home"; if none flagged, show newest
+      var flagged = posts.filter(function (p) { return p.home === true || p.home === "true"; });
+      var show = (flagged.length ? flagged : posts).slice(0, limit);
+      el.innerHTML = show.map(function (p) {
+        var title = esc(pick(p.title, c.lang)), desc = esc(pick(p.description, c.lang));
+        var cat = esc(pick(p.category, c.lang)), cover = esc(normCover(p.cover));
+        var meta = esc(fmtDate(p.date, c.lang)) + " · " + esc(readingTime(pick(p.body, c.lang), c.lang));
+        return '<article class="post reveal in">' +
+          '<a class="post-media" href="' + postHref(c, p.slug) + '"><img src="' + cover + '" alt="' + title + '" loading="lazy" />' +
+          (cat ? '<span class="post-cat">' + cat + "</span>" : "") + "</a>" +
+          '<div class="post-body"><div class="post-meta">' + meta + "</div>" +
+          '<h3><a href="' + postHref(c, p.slug) + '">' + title + "</a></h3><p>" + desc + "</p>" +
+          '<a class="post-link" href="' + postHref(c, p.slug) + '">' + esc(t.readMore) + "</a></div></article>";
+      }).join("");
+    }).catch(function () { el.innerHTML = ""; });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var idx = document.getElementById("blog-index");
     var post = document.getElementById("blog-post");
+    var preview = document.getElementById("blog-preview") || document.getElementById("blog-home");
     if (idx) renderIndex(idx);
     if (post) renderPost(post);
+    if (preview) renderPreview(preview);
   });
 })();
