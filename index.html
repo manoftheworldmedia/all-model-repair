@@ -890,12 +890,19 @@ BACK ON THE ROAD</h2>
       if (service) lines.push('Service: ' + service);
       if (message) lines.push('Details: ' + message);
       var body = encodeURIComponent(lines.join('\n'));
-      // iOS wants "&body=", most others "?body=" — "?&body=" works broadly
-      var isIOS = /iP(hone|od|ad)/.test(navigator.userAgent);
-      var sep = isIOS ? '&' : '?';
-      var smsLink = 'sms:+18186539789' + sep + 'body=' + body;
+      // "?&body=" is the format that works across iOS and Android reliably
+      var smsLink = 'sms:+18186539789?&body=' + body;
       document.getElementById('form-success').classList.add('show');
-      window.location.href = smsLink;
+      // trigger via a real anchor click — most reliable way to open the
+      // messaging app from inside a submit handler on mobile browsers
+      var a = document.createElement('a');
+      a.href = smsLink;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () {
+        if (a.parentNode) a.parentNode.removeChild(a);
+      }, 150);
     });
   }
 

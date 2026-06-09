@@ -884,10 +884,16 @@
       if (service) lines.push('خدمت: ' + service);
       if (message) lines.push('توضیحات: ' + message);
       var body = encodeURIComponent(lines.join('\n'));
-      var isIOS = /iP(hone|od|ad)/.test(navigator.userAgent);
-      var sep = isIOS ? '&' : '?';
+      var smsLink = 'sms:+18186539789?&body=' + body;
       document.getElementById('form-success').classList.add('show');
-      window.location.href = 'sms:+18186539789' + sep + 'body=' + body;
+      var a = document.createElement('a');
+      a.href = smsLink;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () {
+        if (a.parentNode) a.parentNode.removeChild(a);
+      }, 150);
     });
   }
 
