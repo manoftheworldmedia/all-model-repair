@@ -10,8 +10,11 @@
   "use strict";
 
   var LANG = (document.documentElement.getAttribute("lang") || "en").toLowerCase().indexOf("fa") === 0 ? "fa" : "en";
-  var CONTENT_FILE = "content.json";
-  var FAQ_FILE = "faq.json";
+  // base path prefix for subdirectory pages (e.g. "../" on /blog/, /fa/) so
+  // JSON files at the site root resolve correctly. Root pages use "".
+  var BASE = document.documentElement.getAttribute("data-base") || "";
+  var CONTENT_FILE = BASE + "content.json";
+  var FAQ_FILE = BASE + "faq.json";
 
   // paired fields: { en, fa } -> the current language's value (falls back to en)
   function pick(v) {
@@ -67,11 +70,16 @@
   }
 
   function getJSON(url) {
-    // cache-bust so edits show up immediately (GitHub Pages CDN can hold a stale copy)
-    var bust = (url.indexOf("?") === -1 ? "?" : "&") + "t=" + Date.now();
-    return fetch(url + bust, { cache: "no-store" }).then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status + " for " + url);
+    // cache-bust so edits show up immediately (GitHub Pages CDN can hold a stale copy);
+    // fall back to a plain fetch if a host rejects the query string.
+    return fetch(url + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
+    }).catch(function () {
+      return fetch(url, { cache: "no-cache" }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " for " + url);
+        return r.json();
+      });
     });
   }
 

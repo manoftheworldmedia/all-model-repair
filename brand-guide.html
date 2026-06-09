@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="en" data-headlessui-focus-visible=""><head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>All Model Repair — Brand Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;family=Saira:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#F2922E; --amber:#FBA94B;
+    --charcoal:#27292A; --carbon:#0C0D10; --slate:#15181E;
+    --cloud:#F4F5F7; --white:#FFFFFF;
+    --ink:#1C1D20; --muted:#8A8F98;
+    --fd:"Saira",sans-serif; --fb:"Barlow",system-ui,sans-serif;
+    --max:1000px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--white);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(24px,6vw,56px);}
+
+  .eyebrow{font-family:var(--fd);text-transform:uppercase;letter-spacing:.28em;font-weight:600;font-size:12px;color:var(--orange);margin:0 0 18px;}
+  h1,h2,h3,h4{font-family:var(--fd);text-transform:uppercase;margin:0;line-height:1;letter-spacing:.01em;}
+
+  section{padding-block:clamp(64px,9vw,120px);border-bottom:1px solid rgba(26,29,32,.08);}
+  .sec-num{font-family:var(--fd);font-weight:700;font-size:13px;letter-spacing:.2em;color:var(--orange);}
+  .sec-title{font-size:clamp(30px,4.6vw,52px);font-weight:700;margin:12px 0 0;}
+  .sec-intro{font-size:clamp(17px,1.5vw,20px);color:#55585f;max-width:60ch;margin:18px 0 0;line-height:1.6;}
+  .sec-head{margin-bottom:54px;}
+
+  /* COVER */
+  .cover{background:var(--white);color:var(--ink);border-bottom:1px solid rgba(26,29,32,.08);min-height:auto;display:flex;align-items:center;padding-block:clamp(48px,7vw,84px);}
+  .cover .wrap{width:100%;}
+  .cover-lockup{display:flex;align-items:stretch;gap:clamp(24px,4vw,48px);flex-wrap:wrap;}
+  .cover-stage{background:var(--cloud);border:1px solid rgba(26,29,32,.1);border-radius:14px;padding:clamp(22px,3vw,34px);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;flex:none;}
+  .cover-stage::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 85% 12%,rgba(242,146,46,.10),transparent 60%);pointer-events:none;}
+  .cover-logo{width:clamp(200px,26vw,280px);position:relative;z-index:1;}
+  .cover-text{flex:1;min-width:260px;}
+  .cover h1{font-size:clamp(36px,5.4vw,68px);font-weight:800;color:var(--ink);}
+  .cover h1 .o{color:var(--orange);}
+  .cover .tag{font-size:clamp(17px,1.7vw,21px);color:#55585f;margin:18px 0 0;font-family:var(--fb);text-transform:none;letter-spacing:0;max-width:34ch;}
+  .cover .foot{margin-top:30px;display:flex;gap:28px;flex-wrap:wrap;font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--muted);}
+  .cover .foot b{color:var(--ink);font-weight:600;display:block;margin-bottom:4px;}
+
+  /* LOGO */
+  .logo-stage{background:var(--cloud);border:1px solid rgba(26,29,32,.1);border-radius:14px;padding:clamp(40px,7vw,84px);display:flex;align-items:center;justify-content:center;}
+  .logo-stage img{width:min(440px,80%);}
+  .logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
+  @media(max-width:680px){.logo-grid{grid-template-columns:1fr;}}
+  .logo-mini{border:1px solid rgba(26,29,32,.12);border-radius:12px;padding:30px;display:flex;align-items:center;justify-content:center;min-height:150px;}
+  .logo-mini.dark{background:var(--white);}
+  .logo-mini.carbon{background:var(--cloud);}
+  .logo-mini img{width:170px;}
+
+  /* COLORS */
+  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:760px){.swatches{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:460px){.swatches{grid-template-columns:1fr;}}
+  .sw{border-radius:12px;overflow:hidden;border:1px solid rgba(26,29,32,.1);}
+  .sw .chip{height:130px;}
+  .sw .meta{padding:16px 18px 20px;}
+  .sw .nm{font-family:var(--fd);text-transform:uppercase;font-weight:700;font-size:16px;letter-spacing:.03em;}
+  .sw .hex{font-family:var(--fd);font-size:13px;letter-spacing:.08em;color:var(--muted);margin-top:4px;}
+  .sw .use{font-size:14px;color:#666;margin-top:8px;line-height:1.45;}
+
+  /* TYPE */
+  .type-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media(max-width:760px){.type-block{grid-template-columns:1fr;}}
+  .type-card{border:1px solid rgba(26,29,32,.12);border-radius:12px;padding:34px;}
+  .type-card .role{font-family:var(--fd);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--orange);}
+  .type-card .spec{font-size:14px;color:var(--muted);margin-top:4px;}
+  .type-card .big{font-family:var(--fd);font-weight:800;font-size:84px;line-height:.9;text-transform:uppercase;margin:18px 0 6px;}
+  .type-card .big.body{font-family:var(--fb);font-weight:700;text-transform:none;}
+  .type-card .set{font-size:15px;color:#555;border-top:1px solid rgba(26,29,32,.1);margin-top:20px;padding-top:18px;letter-spacing:.01em;}
+  .type-card .set.disp{font-family:var(--fd);text-transform:uppercase;letter-spacing:.04em;}
+  .scale{margin-top:18px;display:grid;gap:0;}
+  .scale .row{display:flex;align-items:baseline;gap:20px;padding:14px 0;border-bottom:1px solid rgba(26,29,32,.08);}
+  .scale .row:last-child{border-bottom:none;}
+  .scale .lbl{font-family:var(--fb);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:130px;flex:none;}
+  .scale .smp{font-family:var(--fd);text-transform:uppercase;font-weight:700;color:var(--ink);line-height:1;}
+  .scale .smp.body{font-family:var(--fb);text-transform:none;font-weight:400;color:#444;}
+
+  /* TONE */
+  .tone-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  @media(max-width:680px){.tone-grid{grid-template-columns:1fr;}}
+  .tone{border:1px solid rgba(26,29,32,.12);border-left:3px solid var(--orange);border-radius:0 12px 12px 0;padding:26px 28px;}
+  .tone h4{font-size:20px;color:var(--ink);letter-spacing:.02em;}
+  .tone p{margin:10px 0 0;color:#5a5d64;font-size:15.5px;}
+  .voice-lines{margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:0 48px;}
+  @media(max-width:680px){.voice-lines{grid-template-columns:1fr;}}
+  .vl{padding:16px 0;border-bottom:1px solid rgba(26,29,32,.08);display:flex;gap:12px;align-items:flex-start;font-size:16px;}
+  .vl .tag{font-family:var(--fd);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;flex:none;width:54px;margin-top:3px;}
+  .vl.say .tag{color:#1F8A5B;}
+  .vl.dont .tag{color:#D62323;}
+  .vl span.t{color:#3a3d42;}
+
+  /* STICKERS */
+  .stick-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  @media(max-width:760px){.stick-grid{grid-template-columns:1fr;}}
+  .stick figure{margin:0;background:var(--cloud);border:1px solid rgba(26,29,32,.1);border-radius:14px;padding:26px;}
+  .stick img{width:100%;border-radius:8px;}
+  .stick figcaption{font-family:var(--fd);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:#55585f;margin-top:18px;text-align:center;}
+
+  /* FACE / OWNER */
+  .face{display:grid;grid-template-columns:0.85fr 1.15fr;gap:clamp(28px,5vw,60px);align-items:center;}
+  @media(max-width:760px){.face{grid-template-columns:1fr;}}
+  .face-photo{border-radius:14px;overflow:hidden;border:1px solid rgba(26,29,32,.1);background:var(--cloud);}
+  .face-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center top;}
+  .face-quote{font-family:var(--fd);text-transform:uppercase;font-weight:700;font-size:clamp(24px,3vw,38px);line-height:1.08;color:var(--ink);margin:0;}
+  .face-quote .o{color:var(--orange);}
+  .face-body{font-size:16.5px;color:#55585f;margin:22px 0 0;line-height:1.65;}
+  .face-name{margin-top:26px;display:flex;align-items:center;gap:14px;}
+  .face-name .nm{font-family:var(--fd);text-transform:uppercase;font-weight:700;font-size:17px;letter-spacing:.04em;color:var(--ink);}
+  .face-name .ti{font-size:14px;color:var(--muted);}
+  .face-name .bar{width:34px;height:2px;background:var(--orange);flex:none;}
+
+  /* BAY GALLERY */
+  .bay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  @media(max-width:760px){.bay-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:460px){.bay-grid{grid-template-columns:1fr;}}
+  .bay{position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(26,29,32,.1);margin:0;}
+  .bay.wide{grid-column:span 2;}
+  @media(max-width:460px){.bay.wide{grid-column:span 1;}}
+  .bay img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3;}
+  .bay figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;padding:34px 16px 14px;background:linear-gradient(to top,rgba(12,13,16,.9),transparent);}
+  .bay .mk{font-family:var(--fd);text-transform:uppercase;font-weight:700;color:#fff;font-size:15px;letter-spacing:.03em;}
+  .bay .jb{font-family:var(--fd);text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--amber);}
+
+  footer.bb{background:var(--cloud);color:var(--ink);border-bottom:none;text-align:center;padding-block:48px;}
+  footer.bb .ft-logo{width:max-content;margin:0 auto 18px;padding:0;}
+  footer.bb .ft-logo img{width:130px;display:block;}
+  footer.bb .ft{font-family:var(--fd);text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--muted);}
+  footer.bb .ft b{color:var(--ink);}
+
+  @media print{
+    section,footer.bb{break-inside:avoid;}
+    .cover{min-height:auto;}
+  }
+</style>
+<style></style></head>
+<body data-new-gr-c-s-check-loaded="14.1299.0" data-gr-ext-installed="" style="" data-new-gr-c-s-loaded="14.1299.0">
+
+<!-- COVER -->
+<header class="cover">
+  <div class="wrap">
+    <div class="cover-lockup">
+      <div class="cover-text">
+        <p class="eyebrow">Brand Book</p>
+        <h1>All Model <span class="o">Repair</span></h1>
+        <p class="tag">Honest auto repair for every make &amp; model.</p>
+        <div class="foot">
+          <div><b>Glendale, CA</b>Foreign &amp; Domestic</div>
+          <div><b>Family-Owned</b>Est. Reputation</div>
+          <div><b>Version 1.0</b>2026</div>
+        </div>
+      </div>
+      <div class="cover-stage"><img class="cover-logo" src="img/logo-icon.png" alt="All Model Repair logo"></div>
+    </div>
+  </div>
+</header>
+
+<!-- 01 LOGO -->
+<section id="logo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">The Logo</h2>
+      <p class="sec-intro">A sleek sports-car mark with an orange speed swoosh, shown on white and light backgrounds exactly as it appears across the website.</p>
+    </div>
+    <div class="logo-stage">
+      <img src="img/logo-icon.png" alt="All Model Repair primary logo on dark">
+    </div>
+    <div class="logo-grid">
+      <div class="logo-mini dark"><img src="img/logo-icon.png" alt="Logo on charcoal"></div>
+      <div class="logo-mini carbon"><img src="img/logo-icon.png" alt="Logo on carbon"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 THE FACE -->
+<section id="face">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">The Face Behind the Shop</h2>
+      <p class="sec-intro">Twenty-two years as a neighborhood shop isn't a slogan — it's a person. We put a face to the name so customers know exactly who's standing behind the work.</p>
+    </div>
+    <div class="face">
+      <div class="face-photo"><img src="img/about-owner.png" alt="Jano, owner of All Model Repair"></div>
+      <div>
+        <p class="face-quote" spellcheck="false" style="">"AT&nbsp;<span class="o" style="">All Model Repair,</span>&nbsp;you're a name we know with a car we've probably seen before."</p>
+        <p class="face-body">Jano has run All Model Repair for over two decades, building trust one honest estimate at a time. When the brand speaks, it should sound like him: straight, warm, and sure of the work — the mechanic a neighbor sends a neighbor to.</p>
+        <div class="face-name">
+          <span class="bar"></span>
+          <span class="nm">Jano</span>
+          <span class="ti">Owner · All Model Repair</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 COLOR -->
+<section id="color">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Color</h2>
+      <p class="sec-intro">One confident orange, anchored by deep neutrals. Orange leads and signals action; charcoal and carbon ground everything; cloud and white carry the content.</p>
+    </div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#F2922E"></div><div class="meta"><div class="nm">AMR Orange</div><div class="hex">#F2922E</div><div class="use">Primary brand color — accents, buttons, the swoosh.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FBA94B"></div><div class="meta"><div class="nm">Amber</div><div class="hex">#FBA94B</div><div class="use">Lighter tint for hovers and highlights.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#27292A"></div><div class="meta"><div class="nm">Charcoal</div><div class="hex">#27292A</div><div class="use">Primary ink and the logo wordmark.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#0C0D10"></div><div class="meta"><div class="nm">Carbon</div><div class="hex">#0C0D10</div><div class="use">Dark backgrounds and bold sections.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#F4F5F7;box-shadow:inset 0 0 0 1px rgba(26,29,32,.08)"></div><div class="meta"><div class="nm">Cloud</div><div class="hex">#F4F5F7</div><div class="use">Light section backgrounds and cards.</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FFFFFF;box-shadow:inset 0 0 0 1px rgba(26,29,32,.08)"></div><div class="meta"><div class="nm">White</div><div class="hex">#FFFFFF</div><div class="use">Base background and the logo's car body.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 TYPE -->
+<section id="type">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Typography</h2>
+      <p class="sec-intro">Two typefaces, clear jobs. <b>Saira</b> is the voice — engineered and automotive — for every headline and label. <b>Barlow</b> is its calm, readable partner for body copy.</p>
+    </div>
+    <div class="type-block">
+      <div class="type-card">
+        <div class="role">Display / Headlines</div>
+        <div class="spec">Saira · 600–800 · UPPERCASE</div>
+        <div class="big">Saira</div>
+        <div class="set disp">AaBbCc 0123 &amp; Every Make</div>
+      </div>
+      <div class="type-card">
+        <div class="role">Body / Text</div>
+        <div class="spec">Barlow · 400–600 · Sentence case</div>
+        <div class="big body">Barlow</div>
+        <div class="set">The quick brown fox jumps over the lazy dog — honest work, fair prices.</div>
+      </div>
+    </div>
+    <div class="scale">
+      <div class="row"><span class="lbl">H1 · Saira 800</span><span class="smp" style="font-size:42px;">Drive Out Better Than Ever</span></div>
+      <div class="row"><span class="lbl">H2 · Saira 700</span><span class="smp" style="font-size:30px;">Full-Service Repair</span></div>
+      <div class="row"><span class="lbl">Label · Saira 600</span><span class="smp" style="font-size:16px;letter-spacing:.14em;">Family-Owned in Glendale</span></div>
+      <div class="row"><span class="lbl">Body · Barlow 400</span><span class="smp body" style="font-size:18px;">Straight answers, fair prices, work done right the first time.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 TONE -->
+<section id="tone">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Tone of Voice</h2>
+      <p class="sec-intro">We sound like the most honest mechanic you've ever met — because that's the reputation we've earned. Plain-spoken, warm, and sure of the work.</p>
+    </div>
+    <div class="tone-grid">
+      <div class="tone"><h4>Honest</h4><p>Tell people the truth and the price up front. No upsell, no jargon, no surprises.</p></div>
+      <div class="tone"><h4>Neighborly</h4><p>Warm and local. We know customers by name and remember their cars.</p></div>
+      <div class="tone"><h4>Confident</h4><p>Decades of every make and model. We've seen it, and we can fix it.</p></div>
+      <div class="tone"><h4>Plain-Spoken</h4><p>Short, clear sentences a driver actually understands. Skip the shop-talk.</p></div>
+    </div>
+    <div class="voice-lines">
+      <div class="vl say"><span class="tag">Say</span><span class="t">"Here's what it needs and what it'll cost — your call."</span></div>
+      <div class="vl dont"><span class="tag">Not</span><span class="t">"Per our diagnostic assessment, remediation is advised."</span></div>
+      <div class="vl say"><span class="tag">Say</span><span class="t">"We work on every make and model."</span></div>
+      <div class="vl dont"><span class="tag">Not</span><span class="t">"Servicing a curated selection of vehicle marques."</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 FROM THE BAY -->
+<section id="bay">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">From the Bay</h2>
+      <p class="sec-intro">Real cars, real work. These are the shots that tell the brand story best — every make and model, fixed right and sent back out better than it came in.</p>
+    </div>
+    <div class="bay-grid">
+      <figure class="bay wide">
+        <img src="img/work-corvette-brakes.jpg" alt="Corvette brake job" loading="lazy">
+        <figcaption><span class="mk">Chevrolet Corvette</span><span class="jb">Brake Job</span></figcaption>
+      </figure>
+      <figure class="bay">
+        <img src="img/work-porsche-ac.jpg" alt="Porsche 911 A/C service" loading="lazy">
+        <figcaption><span class="mk">Porsche 911</span><span class="jb">A/C Service</span></figcaption>
+      </figure>
+      <figure class="bay">
+        <img src="img/work-lambo-muffler.jpg" alt="Lamborghini muffler and O2 sensor" loading="lazy">
+        <figcaption><span class="mk">Lamborghini</span><span class="jb">O2 &amp; Muffler</span></figcaption>
+      </figure>
+      <figure class="bay">
+        <img src="img/work-jeep-gastank.jpg" alt="Jeep gas tank replacement" loading="lazy">
+        <figcaption><span class="mk">Jeep Wrangler</span><span class="jb">Gas Tank</span></figcaption>
+      </figure>
+      <figure class="bay wide">
+        <img src="img/work-lineup.jpg" alt="Cars lined up waiting for service at All Model Repair" loading="lazy">
+        <figcaption><span class="mk">The Lineup</span><span class="jb">Waiting for Service</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 07 STICKERS -->
+<section id="stickers">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">07</span>
+      <h2 class="sec-title">Service Stickers</h2>
+      <p class="sec-intro">The windshield reminder left in every car — the brand's most-seen touchpoint. Available in English and Farsi, always with the logo, the orange frame, and the shop's contact bar.</p>
+    </div>
+    <div class="stick-grid">
+      <div class="stick"><figure><img src="img/sticker-service.png" alt="English service reminder sticker"><figcaption>English</figcaption></figure></div>
+      <div class="stick"><figure><img src="img/sticker-service-fa.png" alt="Farsi service reminder sticker"><figcaption>فارسی · Farsi</figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<footer class="bb">
+  <div class="ft-logo"><img src="img/logo-icon.png" alt="All Model Repair"></div>
+  <div class="ft"><b>All Model Repair</b> · Glendale, CA · Brand Book v1.0</div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></html>

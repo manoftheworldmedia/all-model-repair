@@ -11,6 +11,9 @@
 (function () {
   "use strict";
 
+  // base path prefix for subdirectory pages ("../" on /blog/, /post/, /fa/…)
+  var BASE = document.documentElement.getAttribute("data-base") || "";
+
   var T = {
     en: { featured: "Featured", readGuide: "Read the article", readMore: "Read article →", back: "← All articles", loading: "Loading articles…", empty: "No articles yet — check back soon.", minRead: "min read" },
     fa: { featured: "ویژه", readGuide: "خواندن مقاله", readMore: "خواندن مقاله →", back: "← همهٔ مقاله‌ها", loading: "در حال بارگذاری مقاله‌ها…", empty: "هنوز مقاله‌ای منتشر نشده — به‌زودی سر بزنید.", minRead: "دقیقه مطالعه" }
@@ -26,7 +29,7 @@
   function cfg(el) {
     var urlLang = getParam("lang");
     var lang = (urlLang || el.getAttribute("data-lang") || "en").toLowerCase().indexOf("fa") === 0 ? "fa" : "en";
-    return { lang: lang, file: el.getAttribute("data-posts-file") || "blog/posts.json" };
+    return { lang: lang, file: BASE + (el.getAttribute("data-posts-file") || "blog/posts.json") };
   }
 
   // paired { en, fa } -> current language (falls back to en, then the value itself)
@@ -41,7 +44,7 @@
     if (!cover) return "img/social-card.png";
     cover = String(cover).trim();
     if (/^https?:\/\//i.test(cover)) return cover;
-    return cover.replace(/^\.?\//, "");
+    return BASE + cover.replace(/^\.?\//, "");
   }
 
   function fmtDate(dateStr, lang) {
@@ -77,7 +80,7 @@
   }
 
   function postHref(c, slug) {
-    return "post.html?slug=" + encodeURIComponent(slug) + (c.lang === "fa" ? "&lang=fa" : "");
+    return BASE + "post/?slug=" + encodeURIComponent(slug) + (c.lang === "fa" ? "&lang=fa" : "");
   }
 
   /* ---------------- INDEX ---------------- */
@@ -122,9 +125,9 @@
   function renderPost(el) {
     var c = cfg(el), t = T[c.lang];
     var slug = getParam("slug").replace(/[\/\\]/g, "").replace(/\.\./g, "").trim();
-    if (!slug) { location.href = c.lang === "fa" ? "blog-fa.html" : "blog.html"; return; }
+    if (!slug) { location.href = BASE + (c.lang === "fa" ? "blog-fa/" : "blog/"); return; }
     el.innerHTML = '<p class="blog-loading">' + t.loading + "</p>";
-    var backHref = c.lang === "fa" ? "blog-fa.html" : "blog.html";
+    var backHref = BASE + (c.lang === "fa" ? "blog-fa/" : "blog/");
     loadAll(c).then(function (posts) {
       var p = null;
       for (var i = 0; i < posts.length; i++) { if (posts[i].slug === slug) { p = posts[i]; break; } }
@@ -151,7 +154,7 @@
         "headline": title, "description": desc, "datePublished": p.date,
         "image": new URL(cover, location.href).href,
         "author": { "@type": "Organization", "name": "All Model Repair" },
-        "publisher": { "@type": "AutoRepair", "name": "All Model Repair", "logo": new URL("img/logo-icon.png", location.href).href, "telephone": "+18185488242" },
+        "publisher": { "@type": "AutoRepair", "name": "All Model Repair", "logo": new URL(BASE + "img/logo-icon.png", location.href).href, "telephone": "+18185488242" },
         "mainEntityOfPage": location.href,
         "inLanguage": c.lang === "fa" ? "fa" : "en-US"
       };

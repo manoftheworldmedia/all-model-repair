@@ -4,19 +4,23 @@
   <url>
     <loc>https://allmodelrepair.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://allmodelrepair.com/" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://allmodelrepair.com/fa.html" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://allmodelrepair.com/fa/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://allmodelrepair.com/" />
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://allmodelrepair.com/fa.html</loc>
+    <loc>https://allmodelrepair.com/fa/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://allmodelrepair.com/" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://allmodelrepair.com/fa.html" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://allmodelrepair.com/fa/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://allmodelrepair.com/" />
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://allmodelrepair.com/blog.html</loc>
+    <loc>https://allmodelrepair.com/blog/</loc>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://allmodelrepair.com/blog-fa/</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>
