@@ -169,6 +169,7 @@ content:
         fields:
           - { name: slug, label: "URL slug (lowercase-with-dashes, no spaces)", type: string, pattern: "^[a-z0-9-]+$" }
           - { name: date, label: Date, type: date, options: { format: yyyy-MM-dd } }
+          - { name: home, label: "Show on home page", type: boolean, default: false }
           - { name: cover, label: Cover image, type: image }
           - name: category
             label: Category
@@ -182,8 +183,20 @@ content:
             fields:
               - { name: en, label: English, type: string }
               - { name: fa, label: Farsi / فارسی, type: string }
+          - name: metaTitle
+            label: "SEO meta title (optional — overrides browser tab & Google title; leave blank to use Title)"
+            type: object
+            fields:
+              - { name: en, label: English, type: string }
+              - { name: fa, label: Farsi / فارسی, type: string }
           - name: description
             label: Short description (cards & SEO)
+            type: object
+            fields:
+              - { name: en, label: English, type: text }
+              - { name: fa, label: Farsi / فارسی, type: text }
+          - name: metaDescription
+            label: "SEO meta description (optional — overrides the Google snippet; leave blank to use Short description)"
             type: object
             fields:
               - { name: en, label: English, type: text }
