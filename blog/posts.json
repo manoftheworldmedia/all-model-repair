@@ -47,16 +47,20 @@
       "date": "2026-01-08",
       "cover": "img/work-porsche-ac.jpg",
       "category": {
-        "en": "Smog & Emissions"
+        "en": "Smog & Emissions",
+        "fa": "تست آلایندگی و دود خودرو"
       },
       "title": {
-        "en": "Failed Your Smog Check in Glendale? Here's Exactly What to Do Next"
+        "en": "Failed Your Smog Check in Glendale? Here's Exactly What to Do Next",
+        "fa": "آیا در گلندیل تست دود خودروی شما رد شد؟ اینجا دقیقاً باید چه کار کنید"
       },
       "description": {
-        "en": "A step-by-step plan to pass — common failure causes, catalytic converter repair, and how we get Glendale drivers smog-ready."
+        "en": "A step-by-step plan to pass — common failure causes, catalytic converter repair, and how we get Glendale drivers smog-ready.",
+        "fa": "یک برنامه مرحله‌به‌مرحله برای قبولی در تست — دلایل رایج رد شدن، تعمیر کاتالیزور، و اینکه چطور رانندگان گلندیل را برای تست دود آماده می‌کنیم."
       },
       "body": {
-        "en": "Failing a smog check is frustrating, but it's fixable — and it's one of the things we handle most. Here's the plan.\n\n## Step 1: Don't panic, get the report\n\nYour smog station gives you a report showing **why** the vehicle failed. That report tells us exactly where to start.\n\n## Step 2: Find the real cause\n\nCommon smog failures come from:\n\n- A check engine light (an automatic fail in California)\n- Worn oxygen sensors\n- A failing catalytic converter\n- Evaporative (EVAP) system leaks\n\n## Step 3: Repair, then retest\n\nWe diagnose the actual cause, give you a fair price up front, and make the repair. Then you retest. We don't replace parts you don't need just to \"throw something at it.\"\n\nBring us your failure report and we'll map out the shortest path to passing. Call **(818) 548-8242** or [request an appointment](index.html#contact)."
+        "en": "Failing a smog check is frustrating, but it's fixable — and it's one of the things we handle most. Here's the plan.\n\n## Step 1: Don't panic, get the report\n\nYour smog station gives you a report showing **why** the vehicle failed. That report tells us exactly where to start.\n\n## Step 2: Find the real cause\n\nCommon smog failures come from:\n\n- A check engine light (an automatic fail in California)\n- Worn oxygen sensors\n- A failing catalytic converter\n- Evaporative (EVAP) system leaks\n\n## Step 3: Repair, then retest\n\nWe diagnose the actual cause, give you a fair price up front, and make the repair. Then you retest. We don't replace parts you don't need just to \"throw something at it.\"\n\nBring us your failure report and we'll map out the shortest path to passing. Call **(818) 548-8242** or [request an appointment](index.html#contact).",
+        "fa": "رد شدن در تست دود ممکن است آزاردهنده باشد، اما قابل رفع است — و این یکی از کارهایی است که ما بیش از همه انجام می‌دهیم. در اینجا برنامه ما آمده است.\n\n## مرحله ۱: نگران نشوید، گزارش را دریافت کنید\n\nتعمیرگاه تست دود شما گزارشی ارائه می‌دهد که نشان می‌دهد **چرا** خودرو رد شده است. این گزارش دقیقاً به ما می‌گوید از کجا شروع کنیم.\n\n## مرحله ۲: علت واقعی را پیدا کنید\n\nدلایل رایج شکست در تست دود عبارتند از:\n\n- روشن شدن چراغ چک موتور (در کالیفرنیا یک رد خودکار)\n- سنسورهای اکسیژن فرسوده\n- خراب شدن کاتالیزور\n- نشت در سیستم تبخیر سوخت (EVAP)\n\n## مرحله ۳: تعمیر و سپس تست مجدد\n\nما علت واقعی را تشخیص می‌دهیم، قیمت منصفانه را از قبل اعلام می‌کنیم و تعمیر را انجام می‌دهیم. سپس تست مجدد انجام می‌شود. ما قطعات غیرضروری را فقط برای «تست کردن» تعویض نمی‌کنیم.\n\nگزارش شکست خود را به ما بیاورید تا کوتاه‌ترین مسیر برای قبولی را مشخص کنیم. با شماره **(818) 548-8242** تماس بگیرید یا [وقت ملاقات درخواست کنید](index.html#contact)."
       }
     }
   ]
