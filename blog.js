@@ -135,9 +135,31 @@
 
       var title = pick(p.title, c.lang), desc = pick(p.description, c.lang), body = pick(p.body, c.lang);
       var cover = normCover(p.cover);
-      document.title = title + " — All Model Repair";
-      var dmeta = document.querySelector('meta[name="description"]');
-      if (dmeta && desc) dmeta.setAttribute("content", desc);
+
+      // SEO: optional metaTitle / metaDescription override the visible title/description
+      var metaTitle = pick(p.metaTitle, c.lang) || (title + " — All Model Repair");
+      var metaDesc = pick(p.metaDescription, c.lang) || desc;
+      document.title = metaTitle;
+
+      function setMeta(sel, val) {
+        if (!val) return;
+        var m = document.querySelector(sel);
+        if (m) m.setAttribute("content", val);
+      }
+      setMeta('meta[name="description"]', metaDesc);
+      setMeta('meta[property="og:title"]', metaTitle);
+      setMeta('meta[property="og:description"]', metaDesc);
+      setMeta('meta[name="twitter:title"]', metaTitle);
+      setMeta('meta[name="twitter:description"]', metaDesc);
+      // point canonical + og:url at this specific post
+      var canon = "https://allmodelrepair.com/post/?slug=" + encodeURIComponent(slug) + (c.lang === "fa" ? "&lang=fa" : "");
+      var cl = document.querySelector('link[rel="canonical"]');
+      if (cl) cl.setAttribute("href", canon);
+      setMeta('meta[property="og:url"]', canon);
+      // use the post cover as the share image
+      var coverAbs = new URL(cover, location.href).href;
+      setMeta('meta[property="og:image"]', coverAbs);
+      setMeta('meta[name="twitter:image"]', coverAbs);
 
       var bodyHtml = window.marked ? marked.parse(body) : esc(body);
       el.innerHTML =
@@ -151,7 +173,7 @@
 
       var ld = {
         "@context": "https://schema.org", "@type": "Article",
-        "headline": title, "description": desc, "datePublished": p.date,
+        "headline": title, "description": metaDesc, "datePublished": p.date,
         "image": new URL(cover, location.href).href,
         "author": { "@type": "Organization", "name": "All Model Repair" },
         "publisher": { "@type": "AutoRepair", "name": "All Model Repair", "logo": new URL(BASE + "img/logo-icon.png", location.href).href, "telephone": "+18185488242" },
