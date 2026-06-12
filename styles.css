@@ -280,13 +280,13 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
   color: var(--muted);
   white-space: nowrap;
 }
-.nav-links { display: flex; gap: clamp(13px, 1.3vw, 26px); align-items: center; }
+.nav-links { display: flex; gap: clamp(12px, 1.1vw, 22px); align-items: center; }
 .nav-links a {
   font-family: var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14.5px;
   color: var(--text-soft);
   transition: color .15s ease;
   white-space: nowrap;
@@ -330,13 +330,16 @@ h3.display { font-size: clamp(22px, 2.6vw, 30px); }
 .nav-mobile .m-cta { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
 .nav-mobile .m-cta .btn { flex: 1; min-width: 140px; }
 
-/* Collapse to hamburger when the inline nav runs out of room */
-@media (max-width: 1440px) {
-  .nav-links { display: none; }
+/* Book Now ghost button only on wide screens; below that just Call fits */
+@media (max-width: 1180px) {
   .nav-cta .btn-ghost { display: none; }
+}
+/* Collapse to hamburger only when the inline nav truly runs out of room */
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
   .nav-toggle { display: inline-flex; }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1025px) {
   .nav-mobile { display: none !important; }
 }
 
@@ -1114,14 +1117,14 @@ body.has-dark-footer .footer-credit img,
 .fp-body p { color: var(--text-soft); margin: 16px 0 24px; font-size: 17px; line-height: 1.6; }
 
 /* ---------- Blog: dynamic images, loading, single post ---------- */
-.fp-media img, .post-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.fp-media img, .post-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
 .blog-loading { color: var(--muted); font-size: 17px; text-align: center; padding: 40px 0; }
 .post-article { max-width: 760px; margin-inline: auto; }
 .post-back { display: inline-block; font-family: var(--font-display); text-transform: uppercase; letter-spacing: .08em; font-size: 14px; color: var(--accent); margin-bottom: 18px; }
 .post-article h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.06; margin: 6px 0 0; color: var(--text); }
 .post-lede { font-size: clamp(18px, 1.6vw, 21px); color: var(--text-soft); line-height: 1.55; margin: 18px 0 0; }
 .post-cover { margin: 28px 0 8px; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); aspect-ratio: 16 / 9; }
-.post-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-cover img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
 .post-content { font-size: 18px; line-height: 1.7; color: var(--text-soft); }
 .post-content h2 { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .01em; font-size: clamp(22px, 2.6vw, 30px); color: var(--text); margin: 38px 0 12px; }
 .post-content h3 { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 28px 0 10px; }
