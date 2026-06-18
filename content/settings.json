@@ -10,8 +10,14 @@
     "map_query": "1305 S Glendale Ave Glendale CA 91205"
   },
   "social": [
-    { "platform": "instagram", "url": "https://www.instagram.com/allmodelrepair/" },
-    { "platform": "yelp", "url": "https://www.yelp.com/biz/all-model-auto-repair-glendale" }
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/allmodelrepair/"
+    },
+    {
+      "platform": "yelp",
+      "url": "https://www.yelp.com/biz/all-model-auto-repair-glendale"
+    }
   ],
   "shop_enabled": true,
   "shop_currency": "usd",
@@ -19,6 +25,6 @@
     "footer_tagline": "Family-owned, full-service auto repair & detailing on South Glendale Avenue for over 20 years. Honest work, fair prices, every make and model."
   },
   "fa": {
-    "footer_tagline": "تعمیرگاه خانوادگی و کامل خودرو و دیتیلینگ در خیابان ساوت گلندل، بیش از ۲۰ سال. کار صادقانه، قیمت منصفانه، هر برند و هر مدل."
+    "footer_tagline": "تعمیرگاه خانوادگی و خدمات کامل خودرو در خیابان ساوت گلندل، بیش از ۲۰ سال. کار صادقانه، قیمت منصفانه، هر برند و هر مدل."
   }
 }

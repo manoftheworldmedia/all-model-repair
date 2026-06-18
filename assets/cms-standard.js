@@ -69,10 +69,13 @@
   function applyHome(home) {
     if (!home) return;
 
-    // text bindings
+    // text bindings — use innerHTML only when the value carries markup (e.g. a
+    // <br> in a headline) so formatting is preserved; plain text stays textContent.
     document.querySelectorAll("[data-cms-std]").forEach(function (el) {
       var val = pickPath(home, el.getAttribute("data-cms-std"));
-      if (val != null && typeof val !== "object") el.textContent = val;
+      if (val != null && typeof val !== "object") {
+        if (/[<]/.test(String(val))) el.innerHTML = val; else el.textContent = val;
+      }
     });
 
     // images
@@ -83,9 +86,10 @@
       else el.style.backgroundImage = "url('" + BASE + src.replace(/^\//, "") + "')";
     });
 
-    // head: title + meta + open graph / twitter, from the home doc
-    var t = pickPath(home, "en.seo_title");
-    var d = pickPath(home, "en.seo_description");
+    // head: title + meta + open graph / twitter, from the home doc — language
+    // aware so the /fa/ page keeps its Persian title, not the English one.
+    var t = pickPath(home, LANG + ".seo_title");
+    var d = pickPath(home, LANG + ".seo_description");
     if (t) {
       var titleEl = document.querySelector("[data-cms-doc-title]") || document.querySelector("title");
       if (titleEl) titleEl.textContent = t;
