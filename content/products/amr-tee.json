@@ -1,0 +1,16 @@
+{
+  "sku": "amr-tee",
+  "price": 28,
+  "currency": "usd",
+  "image": "/assets/sticker-service.png",
+  "buy_url": "https://www.instagram.com/allmodelrepair/",
+  "active": true,
+  "en": {
+    "name": "All Model Repair Shop Tee",
+    "description": "Soft cotton tee with the All Model Repair shop mark — Foreign & Domestic, Glendale since day one. Wear it like the regulars do."
+  },
+  "fa": {
+    "name": "تی‌شرت تعمیرگاه آل مادل ریپر",
+    "description": "تی‌شرت نخی نرم با نشان تعمیرگاه آل مادل ریپر — خارجی و داخلی، گلندل از روز اول. مثل مشتری‌های همیشگی بپوشید."
+  }
+}

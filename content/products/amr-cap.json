@@ -1,0 +1,16 @@
+{
+  "sku": "amr-cap",
+  "price": 24,
+  "currency": "usd",
+  "image": "/assets/shop-front.png",
+  "buy_url": "https://www.instagram.com/allmodelrepair/",
+  "active": true,
+  "en": {
+    "name": "All Model Repair Trucker Cap",
+    "description": "Classic snapback trucker cap with an embroidered AMR logo. Built for the bay, the freeway, and everywhere in between."
+  },
+  "fa": {
+    "name": "کلاه آل مادل ریپر",
+    "description": "کلاه کلاسیک با لوگوی گلدوزی‌شدهٔ آل مادل ریپر. برای تعمیرگاه، بزرگراه و هر جای دیگر ساخته شده است."
+  }
+}

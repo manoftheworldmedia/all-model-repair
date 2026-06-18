@@ -1,0 +1,16 @@
+{
+  "sku": "amr-sticker",
+  "price": 5,
+  "currency": "usd",
+  "image": "/assets/sticker-service-fa.png",
+  "buy_url": "https://www.instagram.com/allmodelrepair/",
+  "active": true,
+  "en": {
+    "name": "AMR Die-Cut Sticker",
+    "description": "Weatherproof die-cut sticker of the All Model Repair logo. Slap it on a toolbox, a laptop, or a bumper that's seen things."
+  },
+  "fa": {
+    "name": "استیکر آل مادل ریپر",
+    "description": "استیکر برش‌خوردهٔ ضدآب با لوگوی آل مادل ریپر. روی جعبه‌ابزار، لپ‌تاپ یا سپر خودرو بچسبانید."
+  }
+}
