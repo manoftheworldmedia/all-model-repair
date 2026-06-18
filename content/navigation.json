@@ -1,0 +1,13 @@
+{
+  "items": [
+    { "url": "/#services", "newTab": false, "label_en": "Services", "label_fa": "خدمات" },
+    { "url": "/#showcase", "newTab": false, "label_en": "Our Work", "label_fa": "نمونه کارها" },
+    { "url": "/#why", "newTab": false, "label_en": "Why Us", "label_fa": "چرا ما" },
+    { "url": "/#about", "newTab": false, "label_en": "About", "label_fa": "درباره ما" },
+    { "url": "/#reviews", "newTab": false, "label_en": "Reviews", "label_fa": "نظرات" },
+    { "url": "/#faq", "newTab": false, "label_en": "FAQ", "label_fa": "پرسش‌ها" },
+    { "url": "/blog/index.html", "newTab": false, "label_en": "Blog", "label_fa": "وبلاگ" },
+    { "url": "/shop/index.html", "newTab": false, "label_en": "Shop", "label_fa": "فروشگاه" },
+    { "url": "/#contact", "newTab": false, "label_en": "Contact", "label_fa": "تماس" }
+  ]
+}

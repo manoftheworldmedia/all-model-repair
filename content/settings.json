@@ -1,0 +1,24 @@
+{
+  "email": "info@allmodelrepair.com",
+  "phone": "(818) 548-8242",
+  "sms_phone": "+18186539789",
+  "address": {
+    "street_en": "1305 S Glendale Ave, Ste 1",
+    "street_fa": "۱۳۰۵ خیابان ساوت گلندل، واحد ۱",
+    "city_line_en": "Glendale, CA 91205",
+    "city_line_fa": "گلندل، کالیفرنیا ۹۱۲۰۵",
+    "map_query": "1305 S Glendale Ave Glendale CA 91205"
+  },
+  "social": [
+    { "platform": "instagram", "url": "https://www.instagram.com/allmodelrepair/" },
+    { "platform": "yelp", "url": "https://www.yelp.com/biz/all-model-auto-repair-glendale" }
+  ],
+  "shop_enabled": true,
+  "shop_currency": "usd",
+  "en": {
+    "footer_tagline": "Family-owned, full-service auto repair & detailing on South Glendale Avenue for over 20 years. Honest work, fair prices, every make and model."
+  },
+  "fa": {
+    "footer_tagline": "تعمیرگاه خانوادگی و کامل خودرو و دیتیلینگ در خیابان ساوت گلندل، بیش از ۲۰ سال. کار صادقانه، قیمت منصفانه، هر برند و هر مدل."
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "project": "all-model-repair",
+  "label": "All Model Repair",
+  "description": "MOW CMS content model for All Model Repair — a family-owned auto repair & smog shop in Glendale, CA. Bilingual English / Persian (Farsi), RTL-aware. Homepage, blog/news, pages, navigation, settings, and a merch shop (external-link products).",
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "schemas": [
+    {
+      "name": "home",
+      "label": "Homepage",
+      "icon": "home",
+      "kind": "single",
+      "path": "content/home.json",
+      "fields": [
+        {
+          "name": "images",
+          "label": "Images",
+          "type": "object",
+          "fields": [
+            { "name": "logo", "label": "Logo", "type": "image" },
+            { "name": "hero", "label": "Hero image", "type": "image" },
+            { "name": "og_image", "label": "Social share image", "type": "image" }
+          ]
+        },
+        {
+          "name": "en",
+          "label": "English",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "seo_title", "label": "SEO title (browser tab + Google)", "type": "string", "required": true, "maxLength": 70 },
+            { "name": "seo_description", "label": "SEO description (Google snippet)", "type": "text", "required": true, "maxLength": 320 },
+            { "name": "hero_eyebrow", "label": "Hero — small label", "type": "string" },
+            { "name": "hero_title", "label": "Hero — headline", "type": "string", "required": true },
+            { "name": "hero_subhead", "label": "Hero — paragraph", "type": "text" },
+            { "name": "cta_primary", "label": "Primary button", "type": "string" },
+            { "name": "cta_secondary", "label": "Secondary button", "type": "string" },
+            { "name": "services_eyebrow", "label": "Services — small label", "type": "string" },
+            { "name": "services_heading", "label": "Services — heading", "type": "string" },
+            { "name": "services_subhead", "label": "Services — paragraph", "type": "text" },
+            { "name": "about_eyebrow", "label": "About — small label", "type": "string" },
+            { "name": "about_heading", "label": "About — heading", "type": "string" },
+            { "name": "about_lead", "label": "About — lead paragraph", "type": "text" },
+            { "name": "about_body", "label": "About — body paragraph", "type": "text" },
+            { "name": "faq_eyebrow", "label": "FAQ — small label", "type": "string" },
+            { "name": "faq_heading", "label": "FAQ — heading", "type": "string" },
+            { "name": "faq_subhead", "label": "FAQ — paragraph", "type": "text" },
+            { "name": "contact_eyebrow", "label": "Contact — small label", "type": "string" },
+            { "name": "contact_heading", "label": "Contact — heading", "type": "string" },
+            { "name": "contact_subhead", "label": "Contact — paragraph", "type": "text" }
+          ]
+        },
+        {
+          "name": "fa",
+          "label": "فارسی (Persian)",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "seo_title", "label": "SEO title (browser tab + Google)", "type": "string", "required": true, "maxLength": 70 },
+            { "name": "seo_description", "label": "SEO description (Google snippet)", "type": "text", "required": true, "maxLength": 320 },
+            { "name": "hero_eyebrow", "label": "Hero — small label", "type": "string" },
+            { "name": "hero_title", "label": "Hero — headline", "type": "string", "required": true },
+            { "name": "hero_subhead", "label": "Hero — paragraph", "type": "text" },
+            { "name": "cta_primary", "label": "Primary button", "type": "string" },
+            { "name": "cta_secondary", "label": "Secondary button", "type": "string" },
+            { "name": "services_eyebrow", "label": "Services — small label", "type": "string" },
+            { "name": "services_heading", "label": "Services — heading", "type": "string" },
+            { "name": "services_subhead", "label": "Services — paragraph", "type": "text" },
+            { "name": "about_eyebrow", "label": "About — small label", "type": "string" },
+            { "name": "about_heading", "label": "About — heading", "type": "string" },
+            { "name": "about_lead", "label": "About — lead paragraph", "type": "text" },
+            { "name": "about_body", "label": "About — body paragraph", "type": "text" },
+            { "name": "faq_eyebrow", "label": "FAQ — small label", "type": "string" },
+            { "name": "faq_heading", "label": "FAQ — heading", "type": "string" },
+            { "name": "faq_subhead", "label": "FAQ — paragraph", "type": "text" },
+            { "name": "contact_eyebrow", "label": "Contact — small label", "type": "string" },
+            { "name": "contact_heading", "label": "Contact — heading", "type": "string" },
+            { "name": "contact_subhead", "label": "Contact — paragraph", "type": "text" }
+          ]
+        },
+        {
+          "name": "faqs",
+          "label": "FAQ items",
+          "type": "list",
+          "of": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "category",
+                "label": "Category",
+                "type": "select",
+                "options": ["general", "repairs", "detailing", "trust"],
+                "required": true,
+                "default": "general"
+              },
+              {
+                "name": "en",
+                "label": "English",
+                "type": "object",
+                "fields": [
+                  { "name": "question", "label": "Question", "type": "string", "required": true },
+                  { "name": "answer", "label": "Answer", "type": "text", "required": true }
+                ]
+              },
+              {
+                "name": "fa",
+                "label": "فارسی (Persian)",
+                "type": "object",
+                "fields": [
+                  { "name": "question", "label": "Question", "type": "string" },
+                  { "name": "answer", "label": "Answer", "type": "text" }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "news",
+      "label": "Blog / News",
+      "icon": "file",
+      "kind": "collection",
+      "folder": "content/news",
+      "extension": "json",
+      "primaryField": "date",
+      "fields": [
+        { "name": "date", "label": "Publish date", "type": "date", "required": true },
+        { "name": "cover", "label": "Cover image", "type": "image" },
+        { "name": "featured", "label": "Featured", "type": "boolean", "default": false },
+        {
+          "name": "en",
+          "label": "English",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "title", "label": "Title", "type": "string", "required": true },
+            { "name": "excerpt", "label": "Excerpt", "type": "text" },
+            { "name": "body", "label": "Body", "type": "richtext", "required": true }
+          ]
+        },
+        {
+          "name": "fa",
+          "label": "فارسی (Persian)",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "title", "label": "Title", "type": "string", "required": true },
+            { "name": "excerpt", "label": "Excerpt", "type": "text" },
+            { "name": "body", "label": "Body", "type": "richtext", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pages",
+      "label": "Pages",
+      "icon": "file",
+      "kind": "collection",
+      "folder": "content/pages",
+      "extension": "json",
+      "primaryField": "slug",
+      "fields": [
+        { "name": "slug", "label": "URL slug", "type": "string", "required": true },
+        {
+          "name": "en",
+          "label": "English",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "title", "label": "Title", "type": "string", "required": true },
+            { "name": "body", "label": "Body", "type": "richtext", "required": true }
+          ]
+        },
+        {
+          "name": "fa",
+          "label": "فارسی (Persian)",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "title", "label": "Title", "type": "string", "required": true },
+            { "name": "body", "label": "Body", "type": "richtext", "required": true }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "label": "Shop / Products",
+      "icon": "file",
+      "kind": "collection",
+      "folder": "content/products",
+      "extension": "json",
+      "primaryField": "sku",
+      "fields": [
+        { "name": "sku", "label": "SKU / ID (used in the URL)", "type": "string", "required": true },
+        { "name": "price", "label": "Price (e.g. 29.99)", "type": "number", "required": true, "min": 0 },
+        {
+          "name": "currency",
+          "label": "Currency",
+          "type": "select",
+          "options": ["usd", "eur", "gbp", "cad", "aud"],
+          "required": true,
+          "default": "usd"
+        },
+        { "name": "image", "label": "Product image", "type": "image" },
+        { "name": "buy_url", "label": "Buy / purchase link (external)", "type": "url" },
+        { "name": "active", "label": "For sale", "type": "boolean", "default": true },
+        {
+          "name": "en",
+          "label": "English",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "name", "label": "Name", "type": "string", "required": true },
+            { "name": "description", "label": "Description", "type": "text" }
+          ]
+        },
+        {
+          "name": "fa",
+          "label": "فارسی (Persian)",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "name", "label": "Name", "type": "string", "required": true },
+            { "name": "description", "label": "Description", "type": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "navigation",
+      "label": "Navigation Menu",
+      "icon": "menu",
+      "kind": "single",
+      "path": "content/navigation.json",
+      "fields": [
+        {
+          "name": "items",
+          "label": "Menu items (drag to reorder)",
+          "type": "list",
+          "min": 1,
+          "of": {
+            "type": "object",
+            "fields": [
+              { "name": "url", "label": "Link", "type": "url", "required": true },
+              { "name": "newTab", "label": "Open in new tab", "type": "boolean", "default": false },
+              { "name": "label_en", "label": "Label (English)", "type": "string", "required": true },
+              { "name": "label_fa", "label": "Label (فارسی (Persian))", "type": "string", "required": false }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "label": "Site Settings",
+      "icon": "menu",
+      "kind": "single",
+      "path": "content/settings.json",
+      "fields": [
+        { "name": "email", "label": "Contact email", "type": "email" },
+        { "name": "phone", "label": "Phone", "type": "string" },
+        { "name": "sms_phone", "label": "Text / SMS phone", "type": "string" },
+        {
+          "name": "address",
+          "label": "Address",
+          "type": "object",
+          "fields": [
+            { "name": "street_en", "label": "Street (English)", "type": "string" },
+            { "name": "street_fa", "label": "Street (Persian)", "type": "string" },
+            { "name": "city_line_en", "label": "City line (English)", "type": "string" },
+            { "name": "city_line_fa", "label": "City line (Persian)", "type": "string" },
+            { "name": "map_query", "label": "Google Maps query", "type": "string" }
+          ]
+        },
+        {
+          "name": "social",
+          "label": "Social links",
+          "type": "list",
+          "of": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "platform",
+                "label": "Platform",
+                "type": "select",
+                "options": ["instagram", "linkedin", "x", "youtube", "tiktok", "facebook", "yelp"],
+                "required": true
+              },
+              { "name": "url", "label": "URL", "type": "url", "required": true }
+            ]
+          }
+        },
+        { "name": "shop_enabled", "label": "Enable shop", "type": "boolean", "default": false },
+        {
+          "name": "shop_currency",
+          "label": "Default currency",
+          "type": "select",
+          "options": ["usd", "eur", "gbp", "cad", "aud"],
+          "default": "usd"
+        },
+        {
+          "name": "en",
+          "label": "English",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "footer_tagline", "label": "Footer tagline", "type": "text" }
+          ]
+        },
+        {
+          "name": "fa",
+          "label": "فارسی (Persian)",
+          "type": "object",
+          "ui": { "group": "Languages" },
+          "fields": [
+            { "name": "footer_tagline", "label": "Footer tagline", "type": "text" }
+          ]
+        }
+      ]
+    }
+  ]
+}
