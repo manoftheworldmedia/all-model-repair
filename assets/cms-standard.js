@@ -86,8 +86,11 @@
       else el.style.backgroundImage = "url('" + BASE + src.replace(/^\//, "") + "')";
     });
 
-    // head: title + meta + open graph / twitter, from the home doc — language
-    // aware so the /fa/ page keeps its Persian title, not the English one.
+    // head: title + meta — only on pages that bind standard homepage text
+    // (so secondary pages like /shop/ keep their own <title>).
+    if (!document.querySelector("[data-cms-std]")) return;
+
+    // language aware so the /fa/ page keeps its Persian title, not the English one.
     var t = pickPath(home, LANG + ".seo_title");
     var d = pickPath(home, LANG + ".seo_description");
     if (t) {
