@@ -10,6 +10,9 @@
 
 body { direction: rtl; }
 
+/* keep the Our Work marquee scrolling LTR so auto-scroll/drag behave consistently */
+.marquee, .marquee-track { direction: ltr; }
+
 /* Persian script must NOT be letter-spaced or uppercased —
    it breaks the connected letterforms. Reset everywhere. */
 .display, .eyebrow, .btn, .nav-links a, .brand-name, .brand-sub,

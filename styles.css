@@ -1032,29 +1032,42 @@ body.has-dark-footer .footer-credit img,
 .detail-item p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 
 /* ---------- Showcase / Our Work gallery (fluid masonry wall) ---------- */
-.showcase-wall {
-  column-count: 3;
-  column-gap: 14px;
-  margin-top: 6px;
+.marquee {
+  margin-top: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 3.5%, #000 96.5%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 3.5%, #000 96.5%, transparent);
 }
-@media (max-width: 900px) { .showcase-wall { column-count: 2; } }
-@media (max-width: 560px) { .showcase-wall { column-count: 1; } }
+.marquee::-webkit-scrollbar { display: none; }
+.marquee.dragging { cursor: grabbing; }
+.marquee.dragging .shot img { transform: none !important; }
+.marquee-track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  padding-inline: clamp(20px, 5vw, 64px);
+}
 .shot {
-  position: relative; margin: 0 0 14px;
-  break-inside: avoid;
+  position: relative; margin: 0;
+  flex: 0 0 auto;
+  width: clamp(248px, 30vw, 360px);
   border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--border); background: var(--panel);
-  box-shadow: 0 1px 2px rgba(16,18,22,.05), 0 16px 34px -26px rgba(16,18,22,.45);
-  display: block;
 }
-.shot image-slot { width: 100%; display: block; }
 .shot img {
-  width: 100%; height: auto; display: block;
+  width: 100%;
+  height: clamp(196px, 23vw, 270px);
+  object-fit: cover; display: block;
   filter: saturate(1.03) contrast(1.02);
-  transition: filter .3s ease, transform .5s cubic-bezier(.2,.7,.2,1);
+  transition: transform .5s cubic-bezier(.2,.7,.2,1);
+  -webkit-user-drag: none; user-select: none; pointer-events: none;
 }
-.shot:hover img { filter: brightness(1.05) saturate(1.06) contrast(1.03); transform: scale(1.04); }
-.shot-cap img { aspect-ratio: 4 / 3; object-fit: cover; object-position: center 42%; }
+.shot:hover img { transform: scale(1.04); }
 .shot figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;
   display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
