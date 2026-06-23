@@ -104,6 +104,19 @@
       setMeta('meta[property="og:description"]', d);
       setMeta('meta[name="twitter:description"]', d);
     }
+    // Keep the business structured data (AutoRepair/LocalBusiness) description in sync.
+    if (d) {
+      var lds = document.querySelectorAll('script[type="application/ld+json"]');
+      for (var i = 0; i < lds.length; i++) {
+        try {
+          var obj = JSON.parse(lds[i].textContent);
+          if (obj && /AutoRepair|AutomotiveBusiness|LocalBusiness|Restaurant|CafeOrCoffeeShop|Store/.test(obj["@type"] || "")) {
+            obj.description = d;
+            lds[i].textContent = JSON.stringify(obj);
+          }
+        } catch (e) { /* skip non-JSON-LD */ }
+      }
+    }
     if (home.images && home.images.og_image) {
       var og = BASE + String(home.images.og_image).replace(/^\//, "");
       setMeta('meta[property="og:image"]', og);
