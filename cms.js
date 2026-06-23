@@ -15,6 +15,7 @@
   var BASE = document.documentElement.getAttribute("data-base") || "";
   var CONTENT_FILE = BASE + "content.json";
   var FAQ_FILE = BASE + "faq.json";
+  var HOME_FILE = BASE + "content/home.json";
 
   // paired fields: { en, fa } -> the current language's value (falls back to en)
   function pick(v) {
@@ -302,5 +303,20 @@
 
   /* ---------------- boot ---------------- */
   getJSON(CONTENT_FILE).then(applyContent).catch(function (e) { console.warn("[cms] content:", e.message); });
-  getJSON(FAQ_FILE).then(applyFaq).catch(function (e) { console.warn("[cms] faq:", e.message); });
+  // FAQ single source of truth: portal-edited content/home.json first, faq.json fallback.
+  function homeFaqsToData(h) {
+    var arr = (h && Array.isArray(h.faqs)) ? h.faqs : [];
+    return { items: arr.map(function (f) {
+      return { category: f.category,
+        question: { en: (f.en || {}).question, fa: (f.fa || {}).question },
+        answer: { en: (f.en || {}).answer, fa: (f.fa || {}).answer } };
+    }) };
+  }
+  getJSON(HOME_FILE).then(function (h) {
+    var data = homeFaqsToData(h);
+    if (data.items.length) { applyFaq(data); }
+    else { return getJSON(FAQ_FILE).then(applyFaq); }
+  }).catch(function () {
+    getJSON(FAQ_FILE).then(applyFaq).catch(function (e) { console.warn("[cms] faq:", e.message); });
+  });
 })();
